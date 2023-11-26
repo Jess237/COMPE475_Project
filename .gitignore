@@ -1,0 +1,3 @@
+#ignore LUT source files directory
+LUT/**
+/LUT source files

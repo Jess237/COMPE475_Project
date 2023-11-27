@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -89,7 +88,7 @@ set_property ip_output_repo c:/Users/rojo_/COMPE475_Project/project_1_2023.2/pro
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/hdl/MB1_wrapper.v
+read_verilog -library xil_defaultlib C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/hdl/MB1_wrapper.v
 add_files C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.srcs/sources_1/bd/MB1/MB1.bd
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_clk_wiz_0_1/MB1_clk_wiz_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_clk_wiz_0_1/MB1_clk_wiz_0_1.xdc]
@@ -110,13 +109,13 @@ set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE47
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_axi_uartlite_0_0/MB1_axi_uartlite_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_axi_uartlite_0_0/MB1_axi_uartlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_axi_uartlite_0_0/MB1_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_xbar_0/MB1_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_axi_gpio_0_0/MB1_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_axi_gpio_0_0/MB1_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_axi_gpio_0_0/MB1_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_axi_gpio_0_1/MB1_axi_gpio_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_axi_gpio_0_1/MB1_axi_gpio_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_axi_gpio_0_1/MB1_axi_gpio_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_xbar_0/MB1_xbar_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/MB1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_microblaze_0_0/data/mb_bootloop_le.elf]
 

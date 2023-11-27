@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sat Nov 25 22:23:57 2023
+| Date         : Sun Nov 26 22:15:24 2023
 | Host         : LAPTOP-APNPFDQU running 64-bit major release  (build 9200)
 | Command      : report_utilization -file MB1_lmb_bram_0_utilization_synth.rpt -pb MB1_lmb_bram_0_utilization_synth.pb
 | Design       : MB1_lmb_bram_0
@@ -71,9 +71,9 @@ Warning! LUT value is adjusted to account for LUT combining.
 +-------------------+------+-------+------------+-----------+-------+
 |     Site Type     | Used | Fixed | Prohibited | Available | Util% |
 +-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |    2 |     0 |          0 |        50 |  4.00 |
-|   RAMB36/FIFO*    |    2 |     0 |          0 |        50 |  4.00 |
-|     RAMB36E1 only |    2 |       |            |           |       |
+| Block RAM Tile    |    8 |     0 |          0 |        50 | 16.00 |
+|   RAMB36/FIFO*    |    8 |     0 |          0 |        50 | 16.00 |
+|     RAMB36E1 only |    8 |       |            |           |       |
 |   RAMB18          |    0 |     0 |          0 |       100 |  0.00 |
 +-------------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
@@ -155,9 +155,9 @@ Warning! LUT value is adjusted to account for LUT combining.
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |   12 |        Flop & Latch |
+| RAMB36E1 |    8 |        Block Memory |
 | LUT2     |    6 |                 LUT |
 | SRL16E   |    2 |  Distributed Memory |
-| RAMB36E1 |    2 |        Block Memory |
 | LUT4     |    2 |                 LUT |
 +----------+------+---------------------+
 

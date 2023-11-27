@@ -90,7 +90,7 @@ set_property ip_output_repo c:/Users/rojo_/COMPE475_Project/project_1_2023.2/pro
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.srcs/sources_1/bd/MB1/ip/MB1_dlmb_bram_if_cntlr_0/MB1_dlmb_bram_if_cntlr_0.xci
+read_ip -quiet C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.srcs/sources_1/bd/MB1/ip/MB1_dlmb_bram_if_cntlr_0/MB1_dlmb_bram_if_cntlr_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/ip/MB1_dlmb_bram_if_cntlr_0/MB1_dlmb_bram_if_cntlr_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }

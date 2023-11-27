@@ -36,6 +36,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MB1_rst_clk
 # IP: bd/MB1/ip/MB1_axi_uartlite_0_0/MB1_axi_uartlite_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MB1_axi_uartlite_0_0 || ORIG_REF_NAME==MB1_axi_uartlite_0_0} -quiet] -quiet
 
+# IP: bd/MB1/ip/MB1_xbar_0/MB1_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MB1_xbar_0 || ORIG_REF_NAME==MB1_xbar_0} -quiet] -quiet
+
 # IP: bd/MB1/ip/MB1_microblaze_0_axi_periph_0/MB1_microblaze_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MB1_microblaze_0_axi_periph_0 || ORIG_REF_NAME==MB1_microblaze_0_axi_periph_0} -quiet] -quiet
 
@@ -44,8 +47,5 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MB1_axi_gpi
 
 # IP: bd/MB1/ip/MB1_axi_gpio_0_1/MB1_axi_gpio_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MB1_axi_gpio_0_1 || ORIG_REF_NAME==MB1_axi_gpio_0_1} -quiet] -quiet
-
-# IP: bd/MB1/ip/MB1_xbar_0/MB1_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==MB1_xbar_0 || ORIG_REF_NAME==MB1_xbar_0} -quiet] -quiet
 
 # XDC: c:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.gen/sources_1/bd/MB1/MB1_ooc.xdc

@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Sat Nov 25 22:26:52 2023
+//Date        : Sun Nov 26 22:21:28 2023
 //Host        : LAPTOP-APNPFDQU running 64-bit major release  (build 9200)
 //Command     : generate_target MB1.bd
 //Design      : MB1
@@ -20,9 +20,9 @@ module MB1
     sys_clock,
     usb_uart_rxd,
     usb_uart_txd);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 btn " *) input [3:0]btn_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 btn " *) output [3:0]btn_tri_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 btn " *) output [3:0]btn_tri_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 btn TRI_I" *) input [3:0]btn_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 btn TRI_O" *) output [3:0]btn_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 btn TRI_T" *) output [3:0]btn_tri_t;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 led_16bits TRI_O" *) output [15:0]led_16bits_tri_o;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN MB1_sys_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input sys_clock;

@@ -1051,3 +1051,710 @@ selectCodeEditor("pulse_generator.v", 384, 335); // ad (pulse_generator.v)
 // TclEventType: FILE_SET_CHANGE
 // Elapsed Time for: 'L.f': 01h:00m:29s
 // Elapsed Time for: 'L.f': 01h:00m:31s
+// Elapsed time: 69 seconds
+selectCodeEditor("pulse_generator.v", 189, 485); // ad (pulse_generator.v)
+// Elapsed time: 77 seconds
+selectCodeEditor("pulse_generator.v", 246, 498); // ad (pulse_generator.v)
+// Elapsed time: 15 seconds
+selectCodeEditor("pulse_generator.v", 169, 517); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 136, 515); // ad (pulse_generator.v)
+typeControlKey((HResource) null, "pulse_generator.v", 'c'); // ad (pulse_generator.v)
+// Elapsed time: 182 seconds
+selectCodeEditor("pulse_generator.v", 613, 117); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:06m:18s
+// Elapsed Time for: 'L.f': 01h:06m:20s
+// Elapsed time: 20 seconds
+selectCodeEditor("pulse_generator.v", 227, 225); // ad (pulse_generator.v)
+// Elapsed time: 20 seconds
+selectCodeEditor("pulse_generator.v", 51, 218); // ad (pulse_generator.v)
+// Elapsed time: 24 seconds
+selectCodeEditor("pulse_generator.v", 12, 198); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 198, 223); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 01h:07m:24s
+// Elapsed Time for: 'L.f': 01h:07m:26s
+// Elapsed time: 165 seconds
+selectCodeEditor("pulse_generator.v", 283, 192); // ad (pulse_generator.v)
+// Elapsed time: 15 seconds
+selectCodeEditor("pulse_generator.v", 167, 183); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 185, 125); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 186, 131); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:10m:36s
+// Elapsed Time for: 'L.f': 01h:10m:38s
+selectCodeEditor("pulse_generator.v", 3, 266); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 44, 258); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:10m:46s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 01h:10m:48s
+// Elapsed time: 91 seconds
+selectCodeEditor("pulse_generator.v", 332, 259); // ad (pulse_generator.v)
+// Elapsed time: 110 seconds
+selectCodeEditor("pulse_generator.v", 187, 217); // ad (pulse_generator.v)
+// Elapsed time: 17 seconds
+selectCodeEditor("pulse_generator.v", 201, 222); // ad (pulse_generator.v)
+// Elapsed time: 18 seconds
+selectCodeEditor("pulse_generator.v", 273, 194); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 263, 217); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 191, 225); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 192, 225, false, false, false, false, true); // ad (pulse_generator.v) - Double Click
+selectCodeEditor("pulse_generator.v", 196, 224); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 269, 222); // ad (pulse_generator.v)
+// Elapsed time: 37 seconds
+selectCodeEditor("pulse_generator.v", 160, 229); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 194, 244); // ad (pulse_generator.v)
+// Elapsed time: 17 seconds
+selectCodeEditor("pulse_generator.v", 430, 243); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 211, 248); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 146, 239); // ad (pulse_generator.v)
+// Elapsed time: 25 seconds
+selectCodeEditor("pulse_generator.v", 33, 275); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 49, 259); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 8, 252); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:16m:34s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 01h:16m:36s
+// Elapsed time: 115 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pulse_generator.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("tb_pulse_generator.v", 33, 214); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 33, 201); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 32, 204); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 29, 220); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 29, 236); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 29, 236, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 143, 249); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 11, 245); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 87, 252); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 87, 252, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 90, 239); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 90, 239, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 12, 239); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 5, 247); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_pulse_generator.v", 693, 192); // ad (tb_pulse_generator.v)
+// Elapsed Time for: 'L.f': 01h:18m:50s
+// Elapsed Time for: 'L.f': 01h:18m:52s
+// Elapsed time: 25 seconds
+selectCodeEditor("tb_pulse_generator.v", 505, 276); // ad (tb_pulse_generator.v)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_generator.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 41 seconds
+selectCodeEditor("pulse_generator.v", 373, 211); // ad (pulse_generator.v)
+// Elapsed time: 86 seconds
+selectCodeEditor("pulse_generator.v", 550, 129); // ad (pulse_generator.v)
+// Elapsed time: 79 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v)]", 7); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 13 seconds
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_IMPLEMENTATION, "Implementation", false); // f (PAResourceQtoS.SrcFilePropPanels_IMPLEMENTATION): FALSE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_implementation false [get_files  C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/tb_pulse_generator.v] 
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_SYNTHESIS, "Synthesis", false); // f (PAResourceQtoS.SrcFilePropPanels_SYNTHESIS): FALSE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_synthesis false [get_files  C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/tb_pulse_generator.v] 
+selectCodeEditor("pulse_generator.v", 278, 153); // ad (pulse_generator.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pulse_generator.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 14 seconds
+selectCodeEditor("tb_pulse_generator.v", 193, 232); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 614, 215); // ad (tb_pulse_generator.v)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_generator.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pulse_generator.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("tb_pulse_generator.v", 89, 141); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 89, 141, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_generator.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("pulse_generator.v", 516, 52); // ad (pulse_generator.v)
+// Elapsed time: 11 seconds
+selectCodeEditor("pulse_generator.v", 428, 261); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:24m:34s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+selectCodeEditor("pulse_generator.v", 4, 253); // ad (pulse_generator.v)
+// Elapsed Time for: 'L.f': 01h:24m:36s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:24m:42s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pulse_generator.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'L.f': 01h:24m:44s
+selectCodeEditor("tb_pulse_generator.v", 98, 155); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 175, 202); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_pulse_generator.v", 218, 226); // ad (tb_pulse_generator.v)
+// Elapsed Time for: 'L.f': 01h:24m:48s
+selectCodeEditor("tb_pulse_generator.v", 240, 241); // ad (tb_pulse_generator.v)
+// Elapsed Time for: 'L.f': 01h:24m:50s
+selectCodeEditor("tb_pulse_generator.v", 58, 239); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 228, 233); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:24m:54s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 01h:24m:56s
+selectCodeEditor("tb_pulse_generator.v", 86, 161); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 375, 198); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:25m:06s
+// Elapsed Time for: 'L.f': 01h:25m:08s
+selectCodeEditor("tb_pulse_generator.v", 265, 247); // ad (tb_pulse_generator.v)
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_pulse_generator.v", 326, 143); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 369, 161); // ad (tb_pulse_generator.v)
+// Elapsed time: 11 seconds
+selectCodeEditor("tb_pulse_generator.v", 253, 321); // ad (tb_pulse_generator.v)
+// Elapsed time: 113 seconds
+selectCodeEditor("tb_pulse_generator.v", 73, 410); // ad (tb_pulse_generator.v)
+typeControlKey((HResource) null, "tb_pulse_generator.v", 'c'); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 33, 413); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 82, 405); // ad (tb_pulse_generator.v)
+typeControlKey((HResource) null, "tb_pulse_generator.v", 'c'); // ad (tb_pulse_generator.v)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 95 MB. Current time: 11/28/23, 2:41:24 PM PST
+// Elapsed time: 193 seconds
+selectCodeEditor("tb_pulse_generator.v", 235, 413); // ad (tb_pulse_generator.v)
+// Elapsed time: 30 seconds
+selectCodeEditor("tb_pulse_generator.v", 117, 391); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:31m:35s
+// Elapsed Time for: 'L.f': 01h:31m:37s
+// Elapsed time: 21 seconds
+selectCodeEditor("tb_pulse_generator.v", 110, 224); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 86, 238); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 66, 236); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 74, 258); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 113, 243); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:33m:07s
+// Elapsed Time for: 'L.f': 01h:33m:09s
+// Elapsed time: 64 seconds
+selectCodeEditor("tb_pulse_generator.v", 153, 371); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:33m:23s
+// Elapsed Time for: 'L.f': 01h:33m:25s
+// Elapsed time: 24 seconds
+selectCodeEditor("tb_pulse_generator.v", 218, 411); // ad (tb_pulse_generator.v)
+// Elapsed time: 31 seconds
+selectCodeEditor("tb_pulse_generator.v", 149, 414); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 55, 428); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:34m:13s
+// Elapsed Time for: 'L.f': 01h:34m:15s
+// Elapsed time: 35 seconds
+selectCodeEditor("tb_pulse_generator.v", 464, 366); // ad (tb_pulse_generator.v)
+// Elapsed time: 11 seconds
+selectCodeEditor("tb_pulse_generator.v", 521, 103); // ad (tb_pulse_generator.v)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_pulse_generator' 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'tb_pulse_generator' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_pulse_generator_vlog.prj" ECHO is off. ECHO is off. 
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module pulse_generator ERROR: [VRFC 10-2989] 'freq' is not declared [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v:18] ERROR: [VRFC 10-8530] module 'pulse_generator' is ignored due to previous errors [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v:3] 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // a (dialog15)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+// Elapsed time: 30 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set). ]", 14, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aa
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys-3-Master.xdc]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys-3-Master.xdc]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys-3-Master.xdc]", 4, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ao (PAResourceCommand.PACommandNames_SRC_DISABLE, src_disable_menu)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  C:/Users/rojo_/COMPE475_Project/Constraint_files/Basys-3-Master.xdc] 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag (PAResourceItoN.MainMenuMgr_FILE, File)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag (PAResourceItoN.MainMenuMgr_FILE, File)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_pulse_generator' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'tb_pulse_generator' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_pulse_generator_vlog.prj" ECHO is off. ECHO is off. 
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module pulse_generator ERROR: [VRFC 10-2989] 'freq' is not declared [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v:18] ERROR: [VRFC 10-8530] module 'pulse_generator' is ignored due to previous errors [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v:3] 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // a (dialog16)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pulse_generator (pulse_generator.v)]", 1, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v), uut : pulse_generator (pulse_generator.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_generator.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("pulse_generator.v", 34, 370); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:37m:09s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pulse_generator.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'L.f': 01h:37m:11s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_pulse_generator' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'tb_pulse_generator' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_pulse_generator_vlog.prj" ECHO is off. ECHO is off. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // a (dialog17)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_generator.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys-3-Master.xdc", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_generator.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pulse_generator.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v)]", 7, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+// Elapsed time: 12 seconds
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_SYNTHESIS, "Synthesis", true); // f (PAResourceQtoS.SrcFilePropPanels_SYNTHESIS): TRUE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_synthesis true [get_files  C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/tb_pulse_generator.v] 
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_IMPLEMENTATION, "Implementation", true); // f (PAResourceQtoS.SrcFilePropPanels_IMPLEMENTATION): TRUE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_implementation true [get_files  C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/tb_pulse_generator.v] 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_pulse_generator' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'tb_pulse_generator' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_pulse_generator_vlog.prj" ECHO is off. ECHO is off. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a (PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (dialog18)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 4, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.. ]", 3, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTab((HResource) null, (HResource) null, "Log", 2); // aa
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aa
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aa
+selectTab((HResource) null, (HResource) null, "Log", 2); // aa
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 2); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+// Elapsed time: 17 seconds
+selectCodeEditor("tb_pulse_generator.v", 101, 430); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 101, 430, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 93, 498); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 92, 496, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 91, 496); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 91, 496); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 96, 496); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 96, 496); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 114, 495); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 92, 467); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 92, 467, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_SYNTHESIS, "Synthesis", false); // f (PAResourceQtoS.SrcFilePropPanels_SYNTHESIS): FALSE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_synthesis false [get_files  C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/tb_pulse_generator.v] 
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_IMPLEMENTATION, "Implementation", false); // f (PAResourceQtoS.SrcFilePropPanels_IMPLEMENTATION): FALSE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property used_in_implementation false [get_files  C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/tb_pulse_generator.v] 
+selectCodeEditor("tb_pulse_generator.v", 89, 349); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 89, 349, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 97, 364); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 97, 364, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 99, 414); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 99, 414, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 94, 434); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 94, 434, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 98, 481); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 97, 481, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 95, 498); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 95, 498, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:39m:25s
+// Elapsed Time for: 'L.f': 01h:39m:27s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_pulse_generator' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'tb_pulse_generator' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_pulse_generator_vlog.prj" ECHO is off. ECHO is off. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // a (dialog19)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+// Elapsed time: 17 seconds
+selectCodeEditor("tb_pulse_generator.v", 52, 434); // ad (tb_pulse_generator.v)
+// Elapsed time: 44 seconds
+selectCodeEditor("tb_pulse_generator.v", 266, 410); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 66, 179); // ad (tb_pulse_generator.v)
+// Elapsed time: 20 seconds
+selectCodeEditor("tb_pulse_generator.v", 223, 52); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 295, 60); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:41m:03s
+selectCodeEditor("tb_pulse_generator.v", 206, 221); // ad (tb_pulse_generator.v)
+// Elapsed Time for: 'L.f': 01h:41m:05s
+selectCodeEditor("tb_pulse_generator.v", 149, 97); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_pulse_generator.v", 301, 183); // ad (tb_pulse_generator.v)
+// Elapsed Time for: 'L.f': 01h:41m:09s
+// Elapsed Time for: 'L.f': 01h:41m:11s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_generator.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("pulse_generator.v", 223, 115); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 223, 115, false, false, false, false, true); // ad (pulse_generator.v) - Double Click
+selectCodeEditor("pulse_generator.v", 505, 52); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 513, 52); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 358, 121); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pulse_generator.v", 271, 140); // ad (pulse_generator.v)
+// Elapsed Time for: 'L.f': 01h:41m:45s
+// Elapsed Time for: 'L.f': 01h:41m:47s
+// Elapsed time: 14 seconds
+selectCodeEditor("pulse_generator.v", 135, 431); // ad (pulse_generator.v)
+// Elapsed time: 11 seconds
+selectCodeEditor("pulse_generator.v", 327, 288); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 151, 196); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 228, 266); // ad (pulse_generator.v)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // W.d (dialog20)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_pulse_generator' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0' 
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'tb_pulse_generator' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_pulse_generator_vlog.prj" ECHO is off. ECHO is off. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 6 seconds
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a (PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (dialog21)
+// Elapsed Time for: 'L.f': 01h:42m:31s
+// Elapsed time: 12 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. ]", 2); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-180] Spawn failed: No error. ]", 2); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.. ]", 3); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 9); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 9); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.. ]", 3); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("pulse_generator.v", 35, 97); // ad (pulse_generator.v)
+// Elapsed time: 17 seconds
+selectCodeEditor("pulse_generator.v", 33, 98); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 559, 359); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 176, 107); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:43m:27s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_pulse_generator' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'tb_pulse_generator' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a (PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (dialog22)
+// Elapsed Time for: 'L.f': 01h:43m:33s
+// Elapsed time: 24 seconds
+selectCodeEditor("pulse_generator.v", 315, 284); // ad (pulse_generator.v)
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("pulse_generator.v", 321, 311); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:44m:17s
+// Elapsed Time for: 'L.f': 01h:44m:19s
+selectCodeEditor("pulse_generator.v", 304, 353); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 26, 418); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 32, 407); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Elapsed Time for: 'L.f': 01h:44m:33s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Elapsed Time for: 'L.f': 01h:44m:35s
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_pulse_generator' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'tb_pulse_generator' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // a (dialog23)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pulse_generator.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys-3-Master.xdc]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_generator.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("pulse_generator.v", 79, 117); // ad (pulse_generator.v)
+selectCodeEditor("pulse_generator.v", 214, 140); // ad (pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:45m:13s
+selectCodeEditor("pulse_generator.v", 196, 110); // ad (pulse_generator.v)
+// Elapsed Time for: 'L.f': 01h:45m:15s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:45m:17s
+// Elapsed Time for: 'L.f': 01h:45m:19s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed time: 43 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pulse_generator (pulse_generator.v)]", 1, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v)]", 7, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ao (PAResourceCommand.PACommandNames_SRC_DISABLE, src_disable_menu)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/tb_pulse_generator.v] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v), uut : pulse_generator (pulse_generator.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v), uut : pulse_generator (pulse_generator.v)]", 8, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ao (PAResourceCommand.PACommandNames_SRC_DISABLE, src_disable_menu)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v] 
+// Elapsed Time for: 'L.f': 01h:46m:07s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pulse_generator (pulse_generator.v)]", 1, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pulse_generator (pulse_generator.v)]", 1, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_ENABLE, "Enable File"); // ao (PAResourceCommand.PACommandNames_SRC_ENABLE, src_enable_menu)
+// Run Command: PAResourceCommand.PACommandNames_SRC_ENABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled true [get_files  C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v] 
+// Elapsed Time for: 'L.f': 01h:46m:11s
+// Elapsed Time for: 'L.f': 01h:46m:13s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Elapsed Time for: 'L.f': 01h:46m:15s
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// Elapsed Time for: 'L.f': 01h:46m:17s
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog24)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// Tcl Message: [Tue Nov 28 14:59:32 2023] Launched synth_1... Run output will be captured here: C:/Users/rojo_/COMPE475_Project/project_1/project_1.runs/synth_1/runme.log 
+// 'i' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources]", 8); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, tb_pulse_generator.v]", 9, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, tb_pulse_generator.v]", 9, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, tb_pulse_generator.v]", 9, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_ENABLE, "Enable File"); // ao (PAResourceCommand.PACommandNames_SRC_ENABLE, src_enable_menu)
+// Run Command: PAResourceCommand.PACommandNames_SRC_ENABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled true [get_files  C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/tb_pulse_generator.v] 
+// Elapsed Time for: 'L.f': 01h:46m:31s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, tb_pulse_generator.v]", 9, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Disabled Sources, tb_pulse_generator.v]", 9, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:46m:33s
+// Tcl Message: update_compile_order -fileset sim_1 
+// Elapsed Time for: 'L.f': 01h:46m:35s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v)]", 7, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectCodeEditor("pulse_generator.v", 349, 164); // ad (pulse_generator.v)
+// Elapsed Time for: 'L.f': 01h:46m:47s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 01h:46m:49s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_pulse_generator' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'tb_pulse_generator' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj tb_pulse_generator_vlog.prj" ECHO is off. ECHO is off. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 3 seconds
+selectButton("OptionPane.button", "OK"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a (PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a (dialog25)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:46m:55s
+// Tcl Message: update_compile_order -fileset sim_1 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 01h:46m:57s
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed Time for: 'L.f': 01h:46m:59s
+// Elapsed time: 55 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // f (dialog27)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 16 
+// Tcl Message: [Tue Nov 28 15:01:05 2023] Launched impl_1... Run output will be captured here: C:/Users/rojo_/COMPE475_Project/project_1/project_1.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bq (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_pulse_generator (tb_pulse_generator.v)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pulse_generator.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("tb_pulse_generator.v", 147, 241); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 151, 242); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 68, 254); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 127, 237); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 87, 242); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 83, 242, false, false, false, false, true); // ad (tb_pulse_generator.v) - Double Click
+selectCodeEditor("tb_pulse_generator.v", 84, 248); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 3, 245); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 118, 263); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 106, 265); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 125, 282); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 115, 282); // ad (tb_pulse_generator.v)
+selectCodeEditor("tb_pulse_generator.v", 148, 303); // ad (tb_pulse_generator.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("tb_pulse_generator.v", 160, 304); // ad (tb_pulse_generator.v)
+// Elapsed Time for: 'L.f': 01h:48m:41s
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed Time for: 'L.f': 01h:48m:43s
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 

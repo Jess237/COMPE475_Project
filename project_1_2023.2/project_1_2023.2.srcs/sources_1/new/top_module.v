@@ -7,5 +7,10 @@ output [6:0] seg,
 output [3:0] an,
 output [7:0] JA
 );
-reg signed [9998:0] counter_val_LCD;
+wire [3:0] counter_val;
+wire [7:0] pwm;
+
+//instantiate all modules
+
 endmodule
+

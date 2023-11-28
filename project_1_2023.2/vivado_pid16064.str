@@ -235,3 +235,53 @@ selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag (PAResourceItoN.MainM
 dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag (PAResourceItoN.MainMenuMgr_FLOW, Flow)
 selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
 dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+// Elapsed time: 28 seconds
+floatFrame(PAResourceOtoP.PAViews_CODE, "seven_segment_driver.v"); // R (PAResourceOtoP.PAViews_CODE, Code (5))
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "seven_segment_driver.v"); // R (PAResourceOtoP.PAViews_CODE, Code (5))
+// [GUI Memory]: 162 MB (+487kb) [00:03:30]
+// [GUI Memory]: 179 MB (+9055kb) [00:04:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,289 MB. GUI used memory: 94 MB. Current time: 11/28/23, 3:37:08 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,293 MB. GUI used memory: 93 MB. Current time: 11/28/23, 4:07:09 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,297 MB. GUI used memory: 74 MB. Current time: 11/28/23, 4:37:09 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,299 MB. GUI used memory: 74 MB. Current time: 11/28/23, 5:07:09 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,300 MB. GUI used memory: 74 MB. Current time: 11/28/23, 5:37:10 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,301 MB. GUI used memory: 74 MB. Current time: 11/28/23, 6:07:10 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,302 MB. GUI used memory: 74 MB. Current time: 11/28/23, 6:37:10 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,303 MB. GUI used memory: 74 MB. Current time: 11/28/23, 7:07:11 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 74 MB. Current time: 11/28/23, 7:37:11 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 74 MB. Current time: 11/28/23, 8:07:11 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 74 MB. Current time: 11/28/23, 8:37:12 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 74 MB. Current time: 11/28/23, 9:07:12 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 74 MB. Current time: 11/28/23, 9:37:13 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 74 MB. Current time: 11/28/23, 10:07:13 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 74 MB. Current time: 11/28/23, 10:37:13 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 75 MB. Current time: 11/28/23, 11:07:14 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 74 MB. Current time: 11/28/23, 11:37:14 AM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 67 MB. Current time: 11/28/23, 12:07:15 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 75 MB. Current time: 11/28/23, 12:37:17 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 69 MB. Current time: 11/28/23, 1:07:17 PM PST
+// Elapsed time: 35901 seconds
+selectCodeEditor("seven_segment_driver.v", 388, 379); // ad (seven_segment_driver.v)
+// Elapsed time: 98 seconds
+selectCodeEditor("seven_segment_driver.v", 479, 525); // ad (seven_segment_driver.v)
+unMaximizeFrame(PAResourceOtoP.PAViews_CODE, "seven_segment_driver.v"); // R (PAResourceOtoP.PAViews_CODE, Code (5))
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeFrame(PAResourceOtoP.PAViews_CODE, "seven_segment_driver.v"); // R (PAResourceOtoP.PAViews_CODE, Code (5))
+dockFrame(PAResourceOtoP.PAViews_CODE, "seven_segment_driver.v"); // R (PAResourceOtoP.PAViews_CODE, Code (5))
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectCodeEditor("signal_receiver.v", 236, 124); // ad (signal_receiver.v)
+selectCodeEditor("signal_receiver.v", 86, 118); // ad (signal_receiver.v)
+selectCodeEditor("signal_receiver.v", 225, 101); // ad (signal_receiver.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("signal_receiver.v", 219, 148); // ad (signal_receiver.v)
+// Elapsed Time for: 'L.f': 10h:02m:20s
+selectCodeEditor("signal_receiver.v", 212, 120); // ad (signal_receiver.v)
+// Elapsed Time for: 'L.f': 10h:02m:22s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 10h:02m:28s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'L.f': 10h:02m:30s

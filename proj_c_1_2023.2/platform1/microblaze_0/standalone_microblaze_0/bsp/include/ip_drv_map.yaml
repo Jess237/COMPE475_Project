@@ -1,0 +1,9 @@
+axi_gpio_BUTTONS:
+- axi_gpio
+- gpio
+axi_gpio_LED:
+- axi_gpio
+- gpio
+axi_uartlite_0:
+- axi_uartlite
+- uartlite

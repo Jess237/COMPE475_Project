@@ -1,48 +1,33 @@
 `timescale 1ns / 1ps
 
 module top_module_tb;
-
 reg clk;
 reg rst;
 reg [3:0] sw;
 reg [3:0] counter_sev;
 wire [6:0] seg;
 wire [3:0] an;
+wire [7:0] JA;
+wire pwm;
 wire [19:0] special_count;
 wire done;
 wire [15:0] rms_value;
 wire [3:0] burst_counter; 
 
-
-//instantiate all modules
-pulse_generator uut0(
-    .clk(clk),
-    .rst(rst),
-    .sw(sw),
-    .special_count(special_count)
-);
-signal_processor uut1(
+top_module DUT00(
 .clk(clk),
 .rst(rst),
-.special_counter(special_counter),
+.sw(sw),
+.counter_sev(counter_sev),
+.seg(seg),
+.an(an),
+.JA(JA),
+.pwm(pwm),
+.special_count(special_count),
 .done(done),
-.rms_value(rms_value)
-);
-
-signal_receiver uut2(
-.clk(clk),
-.rst(rst),
 .rms_value(rms_value),
 .burst_counter(burst_counter) 
 );
-
-seven_segment_driver uut3( 
-    .clk(clk), 
-    .rst(rst),
-    .counter(counter_sev),
-    .an(an), 
-    .seg(seg)
-    ); 
 
 initial begin
     // Initialize Inputs

@@ -7,13 +7,15 @@ input [3:0] sw,
 input [3:0] counter_sev,
 output [6:0] seg,
 output [3:0] an,
+output[7:0]JA,
+output pwm,
 output [19:0] special_count,
 output done,
 output [15:0] rms_value,
 output [3:0] burst_counter 
 );
 
-
+assign JA[0]=pwm;
 //instantiate all modules
 pulse_generator uut0(
     .clk(clk),

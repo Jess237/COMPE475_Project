@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log MB1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MB1_wrapper.tcl
+EAStep vivado -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl

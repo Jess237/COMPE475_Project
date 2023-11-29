@@ -1,18 +1,16 @@
-
-*** Running vivado
-    with args -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
-
-
-ECHO is off.
-ECHO is off.
-
-****** Vivado v2023.2 (64-bit)
-  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
-  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
-  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Nov 29 00:06:13 2023
+# Process ID: 18400
+# Current directory: C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.runs/synth_1
+# Command line: vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file: C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.runs/synth_1/top_module.vds
+# Journal file: C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.runs/synth_1\vivado.jou
+# Running On: LAPTOP-APNPFDQU, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+#-----------------------------------------------------------
 Sourcing tcl script 'C:/Users/rojo_/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
 source top_module.tcl -notrace
 WARNING: [Board 49-91] Board repository path 'C:/Xilinx/BoardStore/XilinxBoardStore-2023.2' does not exist, it will not be used to search board files.

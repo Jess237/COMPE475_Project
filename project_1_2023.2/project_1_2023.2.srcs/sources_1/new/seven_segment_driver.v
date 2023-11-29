@@ -6,7 +6,8 @@ module seven_segment_driver(
     input [3:0] counter,
     input [3:0] digit, //counter digit
     output reg [3:0] an, // anode signals of the 7-segment LED display
-    output reg [6:0] seg); //seg 
+    output reg [6:0] seg
+    ); //seg 
 reg [26:0] one_second_counter; // counter for generating 1 second clock enable
 wire one_second_enable;// one second enable for counting numbers
 reg [15:0] displayed_number; // counting number to be displayed
@@ -21,37 +22,37 @@ parameter DIGIT3 = 2'b11;
 
 reg [1:0] seven_seg_counter = 0;
 //Instantiate the seven-segment decoder 4 times.
-seven_segment_decoder uut3 (
+seven_seg_decoder_hex uut3 (
 		.clk(clk), 
 		.rst(rst), 
-		.digit(counter[3]), 
+		.LED_BCD(counter), 
 		.an(an), 
         .seg(seg)
 	);
 	
-seven_segment_decoder uut2 (
-		.clk(clk), 
-		.rst(rst), 
-		.digit(counter[2]), 
-		.an(an), 
-        .seg(seg)
-	);
+//seven_seg_decoder_hex uut2 (
+//		.clk(clk), 
+//		.rst(rst), 
+//		.digit(counter[2]), 
+//		.an(an), 
+//        .seg(seg)
+//	);
    
-seven_segment_decoder uut1 (
-		.clk(clk), 
-		.rst(rst), 
-		.digit(counter[1]), 
-		.an(an), 
-        .seg(seg)
-	);	
+//seven_seg_decoder_hex uut1 (
+//		.clk(clk), 
+//		.rst(rst), 
+//		.digit(counter[1]), 
+//		.an(an), 
+//        .seg(seg)
+//	);	
    
-seven_segment_decoder uut0 (
-		.clk(clk), 
-		.rst(rst), 
-		.digit(counter[0]), 
-		.an(an), 
-        .seg(seg)
-	); 
+//seven_seg_decoder_hex uut0 (
+//		.clk(clk), 
+//		.rst(rst), 
+//		.digit(counter[0]), 
+//		.an(an), 
+//        .seg(seg)
+//	); 
 	
 always @(posedge clk or posedge rst)
     begin
@@ -112,21 +113,6 @@ always @(posedge clk or posedge rst)
         default: 
         endcase
     end
-//Create a simple segment counter that controls the display using a state machine.
-always@(posedge clk or posedge rst) begin 
-    case(seven_seg_counter)
-    DIGIT0:
-        //uut0.digit = counter[0];
-        seven_seg_counter <=DIGIT1;
-    DIGIT1:
-       // uut1.digit = counter[1];
-        seven_seg_counter <=DIGIT2;
-    DIGIT2:
-        seven_seg_counter <=DIGIT3;
-    DIGIT3:
-        seven_seg_counter <=DIGIT0;
-    default:
-        seven_seg_counter <=DIGIT0;
-    endcase
+
 end
 endmodule

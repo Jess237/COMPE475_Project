@@ -10,7 +10,24 @@ module seven_segment_decoder(
 // Cathode patterns of the 7-segment LED display 
 always @(*)
 begin
-an=4'b1110;
+
+//Create a simple segment counter that controls the display using a state machine.
+always@(*) begin 
+    case(digit)
+    DIGIT0:
+        an=4'b1110;
+        seven_seg_counter <=DIGIT1;
+    DIGIT1:
+        //an=4'b1110;
+        seven_seg_counter <=DIGIT2;
+    DIGIT2:
+        seven_seg_counter <=DIGIT3;
+    DIGIT3:
+        seven_seg_counter <=DIGIT0;
+    default:
+        seven_seg_counter <=DIGIT0;
+    endcase
+
 end
 always @(*)
 begin

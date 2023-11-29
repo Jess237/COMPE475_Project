@@ -8,13 +8,13 @@ output [3:0] burst_counter
 );
 
 reg [3:0] temp_counter;
-inital begin
+initial begin
     temp_counter=0;
 end
 always@(posedge clk)begin
     if (rst) temp_counter<=0;
     if (~rst) begin
-        if (rms_value>55) // arbitrary threshold
+        if (rms_value>6) // arbitrary threshold
             temp_counter <= temp_counter+1;
     end
 end

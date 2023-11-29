@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Nov 28 21:46:31 2023
+# Process ID: 31956
+# Current directory: C:/Users/rojo_/COMPE475_Project/project_1_2023.2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13080 C:\Users\rojo_\COMPE475_Project\project_1_2023.2\project_1_2023.2.xpr
+# Log file: C:/Users/rojo_/COMPE475_Project/project_1_2023.2/vivado.log
+# Journal file: C:/Users/rojo_/COMPE475_Project/project_1_2023.2\vivado.jou
+# Running On: LAPTOP-APNPFDQU, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.xpr
+close [ open C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.srcs/sources_1/new/seven_seg_decoder_hex.v w ]
+add_files C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.srcs/sources_1/new/seven_seg_decoder_hex.v
+file mkdir C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.srcs/sim_1/new/top_module_tb.v w ]
+add_files -fileset sim_1 C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.srcs/sim_1/new/top_module_tb.v

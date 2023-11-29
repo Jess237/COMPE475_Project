@@ -1,0 +1,10 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MB1_wrapper_behav xil_defaultlib.MB1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <axi_crossbar_v2_1_30_axi_crossbar> not found while processing module instance <inst> [C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.ip_user_files/bd/MB1/ip/MB1_xbar_0/sim/MB1_xbar_0.v:188]
+ERROR: [VRFC 10-2063] Module <blk_mem_gen_v8_4_7> not found while processing module instance <inst> [C:/Users/rojo_/COMPE475_Project/project_1_2023.2/project_1_2023.2.ip_user_files/bd/MB1/ip/MB1_lmb_bram_0/sim/MB1_lmb_bram_0.v:108]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

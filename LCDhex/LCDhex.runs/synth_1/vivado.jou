@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Nov 28 18:36:59 2023
+# Process ID: 23748
+# Current directory: C:/Users/rojo_/OneDrive/Documents/COMPE470L/compe470/project_3/project_3.runs/synth_1
+# Command line: vivado.exe -log seven_seg_hex.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source seven_seg_hex.tcl
+# Log file: C:/Users/rojo_/OneDrive/Documents/COMPE470L/compe470/project_3/project_3.runs/synth_1/seven_seg_hex.vds
+# Journal file: C:/Users/rojo_/OneDrive/Documents/COMPE470L/compe470/project_3/project_3.runs/synth_1\vivado.jou
+# Running On: LAPTOP-APNPFDQU, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
+#-----------------------------------------------------------
+source seven_seg_hex.tcl -notrace

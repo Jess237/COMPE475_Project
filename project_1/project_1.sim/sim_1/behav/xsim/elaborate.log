@@ -5,7 +5,9 @@ Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'rms_radicand' [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/burst_tool_tb.v:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'rms_radicand' [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/burst_tool_tb.v:25]
+WARNING: [VRFC 10-3091] actual bit length 82 differs from formal bit length 32 for port 'rms_value' [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/burst_tool_tb.v:26]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 82 for port 'rms_value' [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/burst_tool.v:45]
 WARNING: [VRFC 10-5021] port 'burst_count' is not connected on this instance [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/burst_tool.v:20]
 Completed static elaboration
 Starting simulation data flow analysis

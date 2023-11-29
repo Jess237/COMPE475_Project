@@ -15,9 +15,8 @@ reg [15:0] displayed_number; // counting number g 10.5ms refresh period or 380Hz
 reg [19:0] refresh_counter; // 20-bit for creatin
 wire [1:0] LED_activating_counter; 
 reg [3:0] LED_BCD;
-        
+reg[1:0] state =0;
 parameter DIGIT0 = 2'b00;//to be displayed
-
 parameter DIGIT1 = 2'b01;
 parameter DIGIT2 = 2'b10;
 parameter DIGIT3 = 2'b11;
@@ -30,6 +29,7 @@ always @(posedge clk or posedge rst)
        if(rst==1)
             one_second_counter <= 0;
         else begin
+            state<=LED_activating_counter;
             if(one_second_counter>=99999999) 
                  one_second_counter <= 0;
             else
@@ -55,22 +55,22 @@ always @(posedge clk or posedge rst)
     assign LED_activating_counter = refresh_counter[19:18];
     // anode activating signals for 4 LEDs, digit period of 2.6ms
     // decoder to generate anode signals 
-    always @(*)
-    begin
-        case(LED_activating_counter)
+    always @(*)begin 
+        case(state)
             DIGIT0: begin
                 an = 4'b0111; 
                 // activate LED1 and Deactivate LED2, LED3, LED4
                 LED_BCD= displayed_number/1000;
                 // the first digit of the 16-bit number
-                //LED_activating_counter<=LED_activating_counter+1;
-                  end
+                state=state+1;
+                end
             DIGIT1: begin
                 an = 4'b1011; 
                 // activate LED2 and Deactivate LED1, LED3, LED4
                 LED_BCD = (displayed_number % 1000)/100;
                 // the second digit of the 16-bit number
                // LED_activating_counter<=LED_activating_counter+1;
+               state=state+1;
                   end
             DIGIT2: begin
                 an = 4'b1101; 
@@ -78,6 +78,7 @@ always @(posedge clk or posedge rst)
                  LED_BCD = ((displayed_number % 1000)%100)/10;
                  //LED_activating_counter<=LED_activating_counter+1;
                 // the third digit of the 16-bit number
+                state=state+1;
                     end
             DIGIT3: begin
                 an = 4'b1110; 
@@ -85,6 +86,7 @@ always @(posedge clk or posedge rst)
                 LED_BCD = ((displayed_number % 1000)%100)%10;
                // LED_activating_counter<=LED_activating_counter+1;
                 // the fourth digit of the 16-bit number    
+                state=state+1;
                end
         endcase
         end

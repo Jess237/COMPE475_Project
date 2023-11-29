@@ -53,23 +53,22 @@ always @(posedge clk)begin
         end
         else temp_pwm<=0;
     end
-    
-end
+    end
 always@(burst_count)begin
     special_counter<=0;
     special_counter_clock_counts<=0;
 end
 always@(sw) begin
     case (sw)
-        4'd0: width <= 0; // duty cycle percentage
-        4'd1: width <= (2^max_bit_width)*0.25;
-        4'd2: width <= (2^max_bit_width)*0.5;
-        4'd3: width <= (2^max_bit_width)*0.75;
-        4'd4: width <= (2^max_bit_width);
+        4'd0: width = 0; // duty cycle percentage
+        4'd1: width = (2^max_bit_width)*0.25;
+        4'd2: width = (2^max_bit_width)*0.5;
+        4'd3: width = (2^max_bit_width)*0.75;
+        4'd4: width = (2^max_bit_width);
         4'd5: begin
             max_bit_width=6;
-            width <= (2^max_bit_width)*0.5;
-            counter <= {counter,1'b0};
+            width = (2^max_bit_width)*0.5;
+            counter = {counter,1'b0};
             end
         4'd6: begin
             max_bit_width=7;
@@ -123,7 +122,7 @@ always@(sw) begin
             end
 		default : begin 
 			width = 5'd0;
-			//max_bit_width=5;
+			max_bit_width=5;
 		    end
 	endcase
 	end

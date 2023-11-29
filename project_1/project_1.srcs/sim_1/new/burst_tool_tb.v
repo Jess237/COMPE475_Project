@@ -9,7 +9,7 @@ wire JA1;
 wire pwm;
 wire [19:0] special_count;
 wire done;
-wire [15:0] rms_value;
+wire [81:0] rms_value;
 wire [3:0] burst_counter; 
 
 burst_tool DUT00(

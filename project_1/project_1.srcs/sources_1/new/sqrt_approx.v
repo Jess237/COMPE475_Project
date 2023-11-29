@@ -1,9 +1,9 @@
 module sqrt_approx(
-    input [15:0] rms_radicand,
-    output [15:0] rms_value
+    input [31:0] rms_radicand,
+    output [31:0] rms_value
 );
 integer i;
-reg [15:0] sqrt_output;
+reg [31:0] sqrt_output;
 reg [15:0] approx;
 
 always @(*) begin

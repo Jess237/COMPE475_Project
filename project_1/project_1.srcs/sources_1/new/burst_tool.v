@@ -10,8 +10,8 @@ output JA1,
 output pwm,
 output [19:0] special_count,
 output done,
-output [15:0] rms_radicand,
-output [15:0] rms_value,
+output [31:0] rms_radicand,
+output [31:0] rms_value,
 output [3:0] burst_counter 
 );
 reg [15:0]rms_value_radicand;

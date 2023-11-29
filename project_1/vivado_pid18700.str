@@ -7929,3 +7929,30 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_g
 selectCodeEditor("pulse_generator.v", 238, 228); // ad (pulse_generator.v)
 // Elapsed time: 13 seconds
 selectCodeEditor("pulse_generator.v", 548, 169); // ad (pulse_generator.v)
+// Elapsed time: 71 seconds
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_generator.v", 0, true, false); // o (PlanAheadTabBaseWorkspace_JideTabbedPane) - Popup Trigger
+selectCodeEditor("pulse_generator.v", 353, 128); // ad (pulse_generator.v)
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 55 seconds
+selectCodeEditor("pulse_generator.v", 265, 161); // ad (pulse_generator.v)
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 302 MB (+10011kb) [02:08:10]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 118 seconds
+selectCodeEditor("pulse_generator.v", 107, 146); // ad (pulse_generator.v)

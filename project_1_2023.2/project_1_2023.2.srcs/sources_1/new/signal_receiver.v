@@ -2,22 +2,22 @@
 
 module signal_receiver(
 input clk,
-rst,
-input[3:0]counter, //goes up to 1111
-input[7:0]threshold_value, //threshold value is output from signal_processor
-input[7:0]pwm, // 8 bit data stream directly from pulse generator
-output counter_adusted_value //can be positive or negative
+input rst,
+input [15:0] rms_value, 
+output [3:0] burst_counter 
 );
 
-reg temp = 0;
-
+reg [3:0] temp_counter;
+inital begin
+    temp_counter=0;
+end
 always@(posedge clk)begin
+    if (rst) temp_counter<=0;
     if (~rst) begin
-        if (pwm>=threshold_value) begin // valid for square wave only
-            temp <= 1;
-        end
+        if (rms_value>55) // arbitrary threshold
+            temp_counter <= temp_counter+1;
     end
 end
-assign counter_adjusted_value = counter+temp;
+assign burst_counter=temp_counter;
 
 endmodule

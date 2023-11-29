@@ -1,26 +1,23 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/28/2023 12:41:43 AM
-// Design Name: 
-// Module Name: signal_processor
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module signal_processor(
+input clk,
+input rst,
+input special_counter,
+input done,
+output [15:0] rms_value
+);
+reg [15:0] rms_temp;
 
-    );
+initial begin
+     rms_temp=0;
+end
+always@(posedge clk)begin
+    if (rst) begin 
+        rms_temp<=0;
+    end
+    else begin
+    if (done==1)
+        rms_temp= ((special_counter)^2/999_999)^0.5;
+assign rms_value=rms_temp;
 endmodule

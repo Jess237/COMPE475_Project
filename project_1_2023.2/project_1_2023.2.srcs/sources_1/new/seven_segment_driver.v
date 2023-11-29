@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-
+// reference: https://www.fpga4student.com/2017/09/seven-segment-led-display-controller-basys3-fpga.html
 module seven_segment_driver( 
     input clk, 
     input rst,

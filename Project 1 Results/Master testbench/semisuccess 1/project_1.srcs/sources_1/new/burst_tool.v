@@ -22,7 +22,6 @@ pulse_generator uut0(
     .rst(rst),
     .sw(sw),
     .special_count(special_count)
-    .pwm(pwm)
 );
 signal_processor uut1(
 .clk(clk),

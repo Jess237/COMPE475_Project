@@ -27,14 +27,14 @@ module tb_pulse_generator();
         mode=4;
         rst=0;
         #300
-        mode = 15;
+        mode = 3;
         rst=0;
         #300
         mode=11;
         rst=0;
         #300
         mode=12;
-        rst=1;
+        rst=0;
         #300
         mode=0;
         rst=0;  

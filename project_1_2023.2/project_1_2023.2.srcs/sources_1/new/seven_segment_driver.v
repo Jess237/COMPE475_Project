@@ -22,14 +22,15 @@ parameter DIGIT2 = 2'b10;
 parameter DIGIT3 = 2'b11;
 
 initial LED_BCD=0;
+initial an=4'b1110;
 reg [1:0] seven_seg_counter = 0;
 //Instantiate the seven-segment decoder 4 times.
 seven_seg_decoder_hex uut3 (
 		.clk(clk), 
 		.rst(rst), 
-		.LED_BCD(counter), 
-		.an(an), 
-        .seg(seg)
+		.LED_BCD(counter),
+		//.an(an)
+		.seg(seg) 
 	);
 	
 //seven_seg_decoder_hex uut2 (

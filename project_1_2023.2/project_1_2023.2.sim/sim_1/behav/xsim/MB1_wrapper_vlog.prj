@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_1_2023.2.gen/sources_1/bd/MB1/ipshared/c2c6" --include "../../../../project_1_2023.2.gen/sources_1/bd/MB1/ipshared/ec67/hdl" \
+"../../../../project_1_2023.2.ip_user_files/bd/MB1/ip/MB1_xbar_0/sim/MB1_xbar_0.v" \
+"../../../../project_1_2023.2.ip_user_files/bd/MB1/ip/MB1_clk_wiz_0_1/MB1_clk_wiz_0_1_clk_wiz.v" \
+"../../../../project_1_2023.2.ip_user_files/bd/MB1/ip/MB1_clk_wiz_0_1/MB1_clk_wiz_0_1.v" \
+"../../../../project_1_2023.2.ip_user_files/bd/MB1/ip/MB1_lmb_bram_0/sim/MB1_lmb_bram_0.v" \
+"../../../../project_1_2023.2.ip_user_files/bd/MB1/sim/MB1.v" \
+"../../../../project_1_2023.2.gen/sources_1/bd/MB1/hdl/MB1_wrapper.v" \
+"../../../../project_1_2023.2.srcs/sources_1/new/pulse_generator.v" \
+"../../../../project_1_2023.2.srcs/sources_1/new/top_module.v" \
+"../../../../project_1_2023.2.srcs/sources_1/new/signal_processor.v" \
+"../../../../project_1_2023.2.srcs/sources_1/new/signal_receiver.v" \
+"../../../../project_1_2023.2.srcs/sources_1/new/seven_segment_driver.v" \
+"../../../../project_1_2023.2.srcs/sources_1/new/seven_seg_decoder_hex.v" \
+"../../../../project_1_2023.2.srcs/sim_1/new/top_module_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -19,5 +19,7 @@ always@(posedge clk)begin
     else begin
     if (done==1)
         rms_temp= ((special_counter)^2/999_999)^0.5;
+end
+end
 assign rms_value=rms_temp;
 endmodule

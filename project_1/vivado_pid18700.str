@@ -7958,3 +7958,4 @@ selectCodeEditor("pulse_generator.v", 265, 161); // ad (pulse_generator.v)
 selectCodeEditor("pulse_generator.v", 107, 146); // ad (pulse_generator.v)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 206 MB. Current time: 11/28/23, 10:11:01 PM PST
 // HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 206 MB. Current time: 11/28/23, 10:41:04 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 204 MB. Current time: 11/28/23, 11:11:08 PM PST

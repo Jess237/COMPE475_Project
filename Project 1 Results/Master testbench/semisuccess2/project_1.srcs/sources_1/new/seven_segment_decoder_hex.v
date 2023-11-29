@@ -5,7 +5,7 @@ module seven_seg_decoder_hex(
     input rst, // reset
     input LED_BCD,
     //output reg [3:0] an, // anode signals of the 7-segment LED display);
-    output reg [6:0] seg); //seg 
+    input [6:0] seg); //seg 
 
 // Cathode patterns of the 7-segment LED display 
 //an=4'b1110;

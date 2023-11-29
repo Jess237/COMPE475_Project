@@ -30,7 +30,7 @@ always @(posedge clk)begin
     else begin 
         counter<=counter+1;
         if(counter<width)temp_pwm<=1;
-        else temp_pwm<=0;       
+        else temp_pwm<=0;
     end
 end
 
@@ -101,7 +101,6 @@ always@(mode) begin
 			//max_bit_width=5;
 		    end
 	endcase
-	if (counter == 2^max_bit_width-1)counter<=0;
 	end
 assign pwm = temp_pwm;
 assign count = counter;

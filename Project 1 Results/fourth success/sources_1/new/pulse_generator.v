@@ -6,7 +6,7 @@ module pulse_generator(
     input [3:0] mode,
     output pwm,
     output [15:0] count,
-    output [3:0] maxbitwidth
+    output maxbitwidth
 );
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 reg [4:0] counter; // sets the period 11111+1 = 00000 (Daniel Ayala). counts from 0 up to 31. 2^5=32-1=11111
@@ -27,11 +27,9 @@ always @(posedge clk)begin
         counter<=0;
         temp_pwm<=0;
     end
-    else begin 
-        counter<=counter+1;
-        if(counter<width)temp_pwm<=1;
-        else temp_pwm<=0;       
-    end
+    else counter<=counter+1;
+    if (counter<width)temp_pwm<=1;
+    else temp_pwm<=0;
 end
 
 always@(mode) begin
@@ -43,65 +41,53 @@ always@(mode) begin
         4'd4: width = (2^max_bit_width);
         4'd5: begin
             max_bit_width=6;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,1'b0};
             end
         4'd6: begin
             max_bit_width=7;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,2'b0};
             end
         4'd7: begin
             max_bit_width=8;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,3'b0};
             end
         4'd8: begin
             max_bit_width=9;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,4'b0};
             end
         4'd9: begin
             max_bit_width=10;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,5'b0};
             end
         4'd10: begin
             max_bit_width=11;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,6'b0};
             end 
         4'd11: begin
             max_bit_width=12;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,7'b0};
             end
         4'd12: begin
             max_bit_width=13;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,8'b0};
             end
         4'd13: begin
             max_bit_width=14;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,9'b0};
             end
         4'd14: begin
             max_bit_width=15;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,10'b0};
             end
         4'd15: begin
             max_bit_width=16;
-            width = (2^max_bit_width)*0.5;
             counter = {counter,11'b0};
             end
 		default : begin 
 			width = 5'd0;
-			//max_bit_width=5;
+			max_bit_width=5;
 		    end
 	endcase
-	if (counter == 2^max_bit_width-1)counter<=0;
 	end
 assign pwm = temp_pwm;
 assign count = counter;

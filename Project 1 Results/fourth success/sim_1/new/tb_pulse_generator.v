@@ -24,10 +24,10 @@ module tb_pulse_generator();
 		mode = 0;
 		// Wait 100 ns for global reset to finish
 		#10;
-        mode=4;
+        mode=15;
         rst=0;
         #300
-        mode = 15;
+        mode = 10;
         rst=0;
         #300
         mode=11;

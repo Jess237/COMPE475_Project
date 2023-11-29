@@ -7960,3 +7960,16 @@ selectCodeEditor("pulse_generator.v", 107, 146); // ad (pulse_generator.v)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 206 MB. Current time: 11/28/23, 10:41:04 PM PST
 // HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 204 MB. Current time: 11/28/23, 11:11:08 PM PST
 // HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 204 MB. Current time: 11/28/23, 11:41:11 PM PST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 7480 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_pulse_generator.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("tb_pulse_generator.v", 224, 101); // ad (tb_pulse_generator.v)
+typeControlKey((HResource) null, "tb_pulse_generator.v", 'c'); // ad (tb_pulse_generator.v)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,307 MB. GUI used memory: 195 MB. Current time: 11/29/23, 12:11:14 AM PST

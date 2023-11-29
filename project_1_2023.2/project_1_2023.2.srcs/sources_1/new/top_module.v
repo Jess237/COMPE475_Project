@@ -14,7 +14,7 @@ output done,
 output [15:0] rms_value,
 output [3:0] burst_counter 
 );
-
+reg [15:0]rms_value_radicand;
 assign JA[0]=pwm;
 //instantiate all modules
 pulse_generator uut0(
@@ -28,7 +28,12 @@ signal_processor uut1(
 .rst(rst),
 .special_counter(special_counter),
 .done(done),
-.rms_value(rms_value)
+.rms_radicand(rms_radicand)
+);
+
+sqrt_int dut9(
+    .rms_radicand(rms_radicand),
+    .rms_value(rms_value)
 );
 
 signal_receiver uut2(

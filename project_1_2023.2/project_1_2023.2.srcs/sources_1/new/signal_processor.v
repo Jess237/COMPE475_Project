@@ -5,7 +5,7 @@ input clk,
 input rst,
 input special_counter,
 input done,
-output [15:0] rms_value
+output [15:0] rms_radicand
 );
 reg [15:0] rms_temp;
 
@@ -18,8 +18,8 @@ always@(posedge clk)begin
     end
     else begin
     if (done==1)
-        rms_temp= ((special_counter)^2/999_999)^0.5;
+        rms_temp<= special_counter*special_counter*(1/999_999);
 end
 end
-assign rms_value=rms_temp;
+assign rms_radicand=rms_temp;
 endmodule

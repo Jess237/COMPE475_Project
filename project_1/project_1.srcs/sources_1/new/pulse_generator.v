@@ -60,7 +60,6 @@ always @(posedge clk)begin
             temp_pwm<=0;
             special_counter<=0;
         end
-    end
  
 
     if(temp_burst_count-burst_count!=0) begin
@@ -69,9 +68,6 @@ always @(posedge clk)begin
             special_counter_clock_counts<=0;
         end
     end
-
-end
-
 
 //    if(~rst) begin
 //    counter<=0;
@@ -124,9 +120,8 @@ end
 			width = 6'd0;
 		    end
 	endcase
-	end
-	end
-
+end
+end
 assign special_count = special_counter;
 assign JA1=temp_pwm;
 assign number_of_samples=special_counter_clock_counts;

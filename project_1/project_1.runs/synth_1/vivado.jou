@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Nov 30 11:21:17 2023
-# Process ID: 29472
+# Start of session at: Thu Nov 30 12:17:08 2023
+# Process ID: 21708
 # Current directory: C:/Users/rojo_/COMPE475_Project/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log burst_tool.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source burst_tool.tcl
 # Log file: C:/Users/rojo_/COMPE475_Project/project_1/project_1.runs/synth_1/burst_tool.vds

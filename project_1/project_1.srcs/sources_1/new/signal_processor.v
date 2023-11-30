@@ -53,5 +53,5 @@ always@(posedge polling_complete_flag)begin
 endcase
 end
 
-assign rms_radicand=recip;
+assign rms_radicand=4;
 endmodule

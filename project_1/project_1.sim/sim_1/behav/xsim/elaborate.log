@@ -9,6 +9,7 @@ WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 fo
 WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 4 for port 'sw' [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/burst_tool.v:23]
 WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 82 for port 'rms_value' [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/burst_tool.v:45]
 WARNING: [VRFC 10-5021] port 'burst_count' is not connected on this instance [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/burst_tool.v:20]
+WARNING: [VRFC 10-5021] port 'clk' is not connected on this instance [C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/burst_tool.v:37]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

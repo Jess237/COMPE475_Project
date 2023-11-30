@@ -42,7 +42,7 @@ always @(posedge clk)begin
         counter<=counter+1;
         adjusted_counter<=counter+1;
         special_counter_clock_counts<=special_counter_clock_counts+1;
-        if(adjusted_counter<width)begin
+        if(counter<width)begin
             temp_pwm<=1;
             if (special_counter_clock_counts<16) begin //want to make sure signal is high for 15 samples to determine presence of burst
                 special_counter<=special_counter+1;
@@ -74,7 +74,7 @@ always@(sw) begin
         4'b0000: width = 6'd0; // duty cycle percentage 0%
         4'b0001: width = 6'd8;//(2^5)*0.25;
         4'b0010: width = 6'd16;//(2^5)*0.5;
-        4'b0011: width = 6'd32;//(2^5)*0.75;
+        4'b0011: width = 6'd24;//(2^5)*0.75;
         4'b0100: width = 6'd0; //off
         4'b0101: begin
             width = 8'd32;//(2^10)*0.5; max bit width =8;

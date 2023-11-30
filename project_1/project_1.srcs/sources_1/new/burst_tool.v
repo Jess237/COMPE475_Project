@@ -6,14 +6,15 @@ input rst,
 input [15:0] sw,
 output [6:0] seg,
 output [3:0] an,
-output JA1,
-output [3:0] special_count,
-output wire polling_complete_flag,
+output wire JA1,
+output wire[3:0] special_count,
 output [15:0] rms_radicand,
 output [15:0] rms_value,
 output [3:0] burst_counter 
 );
-reg [15:0]rms_value_radicand;
+
+wire polling_complete_flag=0;
+wire [15:0] number_of_samples=0;
 
 //instantiate all modules
 pulse_generator uut0(
@@ -22,11 +23,14 @@ pulse_generator uut0(
     .sw(sw),
     .special_count(special_count),
     .JA1(JA1),
-    .polling_complete_flag(polling_complete_flag)
+    .polling_complete_flag(polling_complete_flag),
+    .number_of_samples(number_of_samples)
 );
 signal_processor uut1(
-.special_counter(special_counter),
-.done(done_sp_count),
+.rst(rst),
+.special_count(special_count),
+.polling_complete_flag(polling_complete_flag),
+.number_of_samples(number_of_samples),
 .rms_radicand(rms_radicand)
 );
 

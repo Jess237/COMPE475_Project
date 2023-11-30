@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module sqrt_approx(
     input clk,
     input rst,

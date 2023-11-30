@@ -7,7 +7,7 @@ module pulse_generator(
     input [3:0] burst_count,
     output wire [3:0] special_count, //1111+1=0
     output wire JA1,
-    output wire polling_complete_flag,
+    output wire polling_complete_flag_g,
     output wire [15:0] number_of_samples
 );
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
@@ -15,30 +15,33 @@ reg [4:0] counter; // sets the period 11111+1 = 00000 (Daniel Ayala). counts fro
 reg [4:0] adjusted_counter; 
 reg [14:0] width; //duty cycle 32/4 = for 8 ticks  output a 1. for the remainder of the 32 tics output a 0.
 reg temp_pwm;
+reg [3:0] temp_burst_count;
 reg [3:0]special_counter; //counts amount of high signals per sample
 reg [3:0]special_counter_clock_counts; //number of samples during polling period
 reg polling_complete_flag_temp;
 
-initial begin
-    counter=0;
-    adjusted_counter=0;
-    width=0;
-    temp_pwm=0;
-    special_counter=0;
-    special_counter_clock_counts=0;
-    polling_complete_flag_temp=0;
-end
+//initial begin
+//    counter=0;
+//    adjusted_counter=0;
+//    width=0;
+//    temp_pwm=0;
+//    special_counter=0;
+//    special_counter_clock_counts=0;
+//    polling_complete_flag_temp=0;
+//end
 
 //output the signal
 always @(posedge clk)begin
     if (rst) begin
-        counter<=0;
-        adjusted_counter<=0;
-        temp_pwm<=0;
-        special_counter<=0;
-        special_counter_clock_counts<=0;
+        counter=0;
+        adjusted_counter=0;
+        temp_pwm=0;
+        special_counter=0;
+        special_counter_clock_counts=0;
+        temp_burst_count=0;
     end
     else begin
+        temp_burst_count<=burst_count;
         counter<=counter+1;
         adjusted_counter<=counter+1;
         special_counter_clock_counts<=special_counter_clock_counts+1;
@@ -54,22 +57,27 @@ always @(posedge clk)begin
             end
         end
         else begin 
-        temp_pwm<=0;
-        special_counter<=0;
+            temp_pwm<=0;
+            special_counter<=0;
         end
     end
+ 
+
+    if(temp_burst_count-burst_count!=0) begin
+        if (temp_pwm<=0) begin
+            special_counter<=0;
+            special_counter_clock_counts<=0;
+        end
     end
-always@(posedge burst_count)begin
-    if (temp_pwm<=0) begin
-        special_counter<=0;
-        special_counter_clock_counts<=0;
-    end
+
 end
-always@(sw) begin
-    counter<=0;
-    adjusted_counter<=0;
-    special_counter<=0;
-    special_counter_clock_counts<=0;
+
+
+//    if(~rst) begin
+//    counter<=0;
+//    adjusted_counter<=0;
+//    special_counter<=0;
+//    special_counter_clock_counts<=0;
     case (sw)
         4'b0000: width = 6'd0; // duty cycle percentage 0%
         4'b0001: width = 6'd8;//(2^5)*0.25;
@@ -117,9 +125,12 @@ always@(sw) begin
 		    end
 	endcase
 	end
+	end
 
 assign special_count = special_counter;
 assign JA1=temp_pwm;
 assign number_of_samples=special_counter_clock_counts;
+assign polling_complete_flag_g = polling_complete_flag_temp;
+
 
 endmodule

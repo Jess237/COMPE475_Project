@@ -6,9 +6,9 @@ reg [3:0] sw;
 wire [6:0] seg;
 wire [3:0] an;
 wire JA1;
-wire [15:0] rms_value_out;
 wire [3:0] special_count;
 wire [15:0] rms_radicand;
+wire [15:0] rms_value_out;
 wire [3:0] burst_counter; 
 
 burst_tool DUT00(
@@ -32,20 +32,20 @@ initial begin
     
     #100
     sw=4'b0001;
-    rst=0;
-    #300
+    //rst=0;
+    #30
     sw=4'b0010;
-    rst=0;
-    #300
+    //rst=0;
+    #30
     sw=4'b0011;
-    rst=0;
-    #300
+    //rst=0;
+    #30
     sw=4'b0011;
     rst=1;
-    #300
+    #30
     sw=0;
-    rst=0;  
-   
+    //rst=0;  
+    //$finish
 end
 always #1 clk=~clk;
 

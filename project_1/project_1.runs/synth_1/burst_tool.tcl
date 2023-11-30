@@ -109,7 +109,7 @@ set_property used_in_implementation false [get_files C:/Users/rojo_/COMPE475_Pro
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/utils_1/imports/synth_1/pulse_generator.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/utils_1/imports/synth_1/burst_tool.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

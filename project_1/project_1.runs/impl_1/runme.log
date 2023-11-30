@@ -21,15 +21,15 @@ Command: link_design -top burst_tool -part xc7a35tcpg236-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 885.188 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 884.781 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2023.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [C:/Users/rojo_/COMPE475_Project/Constraint_files/Basys-3-Master.xdc]
 Finished Parsing XDC File [C:/Users/rojo_/COMPE475_Project/Constraint_files/Basys-3-Master.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1016.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1004.020 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -43,16 +43,21 @@ Running DRC as a precondition to command opt_design
 
 Starting DRC Task
 INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut0/counter[0] has multiple drivers: uut0/counter_reg[0]/Q, and uut0/counter_reg[0]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut0/counter[1] has multiple drivers: uut0/counter_reg[1]/Q, and uut0/counter_reg[1]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut0/counter[2] has multiple drivers: uut0/counter_reg[2]/Q, and uut0/counter_reg[2]__0/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut0/counter[3] has multiple drivers: uut0/counter_reg[3]__0/Q, and uut0/counter_reg[3]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut0/counter[4] has multiple drivers: uut0/counter_reg[4]/Q, and uut0/counter_reg[4]__0/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut3/B1[0] has multiple drivers: an_OBUF[3]_inst_i_2/O, and uut3/state_reg[0]/Q.
 ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut3/state_reg[0] has multiple drivers: uut3/an_OBUF[3]_inst_i_3/O, and uut3/state_reg[1]/Q.
-INFO: [Project 1-461] DRC finished with 2 Errors
+INFO: [Project 1-461] DRC finished with 7 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.848 . Memory (MB): peak = 1039.801 ; gain = 18.965
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1033.016 ; gain = 28.996
 INFO: [Common 17-83] Releasing license: Implementation
-12 Infos, 2 Warnings, 0 Critical Warnings and 3 Errors encountered.
+12 Infos, 2 Warnings, 0 Critical Warnings and 8 Errors encountered.
 opt_design failed
 ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
 
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 30 01:03:46 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 30 11:22:25 2023...

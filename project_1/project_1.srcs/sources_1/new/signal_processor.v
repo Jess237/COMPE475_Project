@@ -3,7 +3,7 @@
 module signal_processor(
 input rst,
 input [3:0] special_count,
-input wire polling_complete_flag,
+input wire polling_complete_flag_s,
 input wire [15:0]samp_num,
 output wire [15:0] rms_radicand
 );
@@ -18,7 +18,7 @@ initial begin
      rms_temp=0;
      num_logic_high_samples=0;
 end
-always@(posedge polling_complete_flag)begin
+always@(posedge polling_complete_flag_s)begin
     if (rst)  begin
         rms_temp<=0;
         num_logic_high_samples<=0;

@@ -34,7 +34,7 @@ end
 //output the signal
 always @(posedge clk)begin
     if (rst) begin
-        counter<=0;
+        counter=0;
         adjusted_counter=0;
         temp_pwm=0;
         special_counter=0;
@@ -90,19 +90,21 @@ always @(posedge clk)begin
 	endcase
         temp_burst_count<=burst_count;      
         adjusted_counter<=counter+1;
+        counter<=counter+1;
         special_counter_clock_counts<=special_counter_clock_counts+1;
         if(counter<width)begin
             temp_pwm<=1;
             if (special_counter_clock_counts<16) begin //want to make sure signal is high for 15 samples to determine presence of burst
                 special_counter<=special_counter+1;
-                polling_complete_flag_temp<=1; //enable polled signal to be passed to signal processor
+                polling_complete_flag_temp<=0;
+                 //enable polled signal to be passed to signal processor
             end
             else begin
                 special_counter<=0;
-                polling_complete_flag_temp<=0;
+                polling_complete_flag_temp<=1;
             end
-        else begin 
-            counter<=counter+1;
+        end
+        else begin        
             temp_pwm<=0;
             special_counter<=0;
         end

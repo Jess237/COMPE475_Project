@@ -3,11 +3,11 @@
 Oct 13 2023
 20:47:58
 C:/Users/rojo_/COMPE475_Project/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
-C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/burst_tool_tb.v,1701317762,verilog,,,,burst_tool_tb,,,,,,,,
-C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/burst_tool.v,1701320985,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v,,burst_tool,,,,,,,,
-C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v,1701316736,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/seven_segment_driver.v,,pulse_generator,,,,,,,,
+C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/burst_tool_tb.v,1701322190,verilog,,,,burst_tool_tb,,,,,,,,
+C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/burst_tool.v,1701322043,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v,,burst_tool,,,,,,,,
+C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/pulse_generator.v,1701319860,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/seven_segment_driver.v,,pulse_generator,,,,,,,,
 C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/seven_segment_decoder_hex.v,1701252553,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/seven_segment_driver.v,,seven_seg_decoder_hex,,,,,,,,
 C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/seven_segment_driver.v,1701262224,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/signal_interpreter.v,,seven_segment_driver,,,,,,,,
-C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/signal_interpreter.v,1701261832,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/sqrt_approx.v,,signal_interpreter,,,,,,,,
-C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/signal_processor.v,1701298812,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/sqrt_approx.v,,signal_processor,,,,,,,,
-C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/sqrt_approx.v,1701266754,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/burst_tool_tb.v,,sqrt_approx,,,,,,,,
+C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/signal_interpreter.v,1701261832,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/signal_processor.v,,signal_interpreter,,,,,,,,
+C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/signal_processor.v,1701321917,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/sqrt_approx.v,,signal_processor,,,,,,,,
+C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sources_1/new/sqrt_approx.v,1701324029,verilog,,C:/Users/rojo_/COMPE475_Project/project_1/project_1.srcs/sim_1/new/burst_tool_tb.v,,sqrt_approx,,,,,,,,

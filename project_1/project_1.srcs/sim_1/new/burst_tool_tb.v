@@ -7,6 +7,7 @@ wire [6:0] seg;
 wire [3:0] an;
 wire JA1;
 wire [3:0] special_count;
+wire [15:0] rms_radicand;
 wire [15:0] rms_value;
 wire [3:0] burst_counter; 
 
@@ -33,10 +34,10 @@ initial begin
     sw=4'b0001;
     rst=0;
     #300
-    sw=4'b1001;
+    sw=4'b0010;
     rst=0;
     #300
-    sw=4'b1011;
+    sw=4'b0011;
     rst=0;
     #300
     sw=4'b0011;

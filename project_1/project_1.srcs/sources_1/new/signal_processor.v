@@ -4,14 +4,14 @@ module signal_processor(
 input rst,
 input [3:0] special_count,
 input wire polling_complete_flag,
-input reg [15:0]samp_num,
+input wire [15:0]samp_num,
 output wire [15:0] rms_radicand
 );
 reg [15:0] rms_temp;
 reg [15:0] rms_temp1;
 reg [15:0] rms_temp2;
 reg [3:0] num_logic_high_samples;
-reg [15:0] recip;
+reg [15:0] recip = 1;
 //16 bit fixed pt arithmetic
 //integer recip = 4096; //2^16/20 = 4096
 initial begin
@@ -53,5 +53,5 @@ always@(posedge polling_complete_flag)begin
 endcase
 end
 
-assign rms_radicand=rms_temp;
+assign rms_radicand=recip;
 endmodule

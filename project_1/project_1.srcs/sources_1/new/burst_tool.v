@@ -8,7 +8,7 @@ output [6:0] seg,
 output [3:0] an,
 output wire JA1,
 output wire[3:0] special_count,
-output [15:0] rms_radicand,
+output wire [15:0] rms_radicand,
 output [15:0] rms_value,
 output [3:0] burst_counter 
 );
@@ -30,7 +30,7 @@ signal_processor uut1(
 .rst(rst),
 .special_count(special_count),
 .polling_complete_flag(polling_complete_flag),
-.number_of_samples(number_of_samples),
+.samp_num(number_of_samples),
 .rms_radicand(rms_radicand)
 );
 

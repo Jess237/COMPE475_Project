@@ -6,9 +6,9 @@ reg [3:0] sw;
 wire [6:0] seg;
 wire [3:0] an;
 wire JA1;
+wire [15:0] rms_value_out;
 wire [3:0] special_count;
 wire [15:0] rms_radicand;
-wire [15:0] rms_value;
 wire [3:0] burst_counter; 
 
 burst_tool DUT00(
@@ -20,7 +20,7 @@ burst_tool DUT00(
 .JA1(JA1),
 .special_count(special_count),
 .rms_radicand(rms_radicand),
-.rms_value(rms_value),
+.rms_value_out(rms_value_out),
 .burst_counter(burst_counter) 
 );
 

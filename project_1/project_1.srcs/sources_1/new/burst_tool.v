@@ -9,7 +9,7 @@ output [3:0] an,
 output wire JA1,
 output wire[3:0] special_count,
 output wire [15:0] rms_radicand,
-output [15:0] rms_value,
+output wire [15:0] rms_value_out,
 output [3:0] burst_counter 
 );
 
@@ -36,13 +36,13 @@ signal_processor uut1(
 
 sqrt_approx dut9(
     .rms_radicand(rms_radicand),
-    .rms_value(rms_value)
+    .rms_val(rms_value_out)
 );
 
 signal_interpreter uut2(
 .clk(clk),
 .rst(rst),
-.rms_value(rms_value),
+.in_rms_val(rms_val),
 .burst_counter(burst_counter) 
 );
 

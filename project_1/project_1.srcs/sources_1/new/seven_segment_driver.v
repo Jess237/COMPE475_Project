@@ -37,7 +37,7 @@ always @(posedge clk or posedge rst)
         end
     end 
     assign one_second_enable = (one_second_counter==99999999)?1:0;
-    always @(posedge clk or posedge rst)
+    always @(posedge clk)
     begin
         if(rst==1)
             displayed_number <= 0;

@@ -9,6 +9,7 @@ module pulse_generator_tb();
     wire JA1;
     wire polling_complete_flag_g;
     wire [15:0] number_of_samples;
+    wire [14:0] width_sig;//for testing only
 
 	// Instantiate the Unit Under Test (UUT)
 	pulse_generator uut (
@@ -19,7 +20,8 @@ module pulse_generator_tb();
         .special_count(special_count), //1111+1=0
         .JA1(JA1),
         .polling_complete_flag_g(polling_complete_flag_g),
-        .number_of_samples(number_of_samples)
+        .number_of_samples(number_of_samples),
+        .width_sig(width_sig)
 	);
 
 	initial begin

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1701375426" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/burst_tool.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1701376608" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/burst_tool.dcp">
   <File Type="PA-TCL" Name="burst_tool.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="burst_tool_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="burst_tool_reports.tcl"/>

@@ -33,7 +33,7 @@ reg polling_complete_flag_temp;
 //output the signal
 always @(posedge clk)begin
     if (rst) begin
-        counter=0;
+        counter<=0;
         adjusted_counter=0;
         temp_pwm=0;
         special_counter=0;
@@ -41,8 +41,7 @@ always @(posedge clk)begin
         temp_burst_count=0;
     end
     else begin
-        temp_burst_count<=burst_count;
-        counter<=counter+1;
+        temp_burst_count<=burst_count;      
         adjusted_counter<=counter+1;
         special_counter_clock_counts<=special_counter_clock_counts+1;
         if(counter<width)begin
@@ -56,7 +55,9 @@ always @(posedge clk)begin
                 polling_complete_flag_temp<=0;
             end
         end
+        
         else begin 
+            counter<=counter+1;
             temp_pwm<=0;
             special_counter<=0;
         end

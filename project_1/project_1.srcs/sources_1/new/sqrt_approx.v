@@ -7,7 +7,7 @@ module sqrt_approx(
     output wire [15:0] rms_val
 );
 integer i;
-reg [15:0] sqrt_output;
+reg [15:0] sqrt_output=0;
 reg [15:0] approx=0;
 reg [15:0] temp1=0;
 reg [15:0] temp2=0;

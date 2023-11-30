@@ -29,6 +29,7 @@ pulse_generator uut0(
     .number_of_samples(number_of_samples_p)
 );
 signal_processor uut1(
+.clk(clk),
 .rst(rst),
 .special_count(special_count),
 .polling_complete_flag_s(polling_complete_flag_g),

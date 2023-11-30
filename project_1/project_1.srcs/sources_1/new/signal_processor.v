@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 
 module signal_processor(
+input clk,
 input rst,
 input [3:0] special_count,
 input wire polling_complete_flag_s,
@@ -14,16 +15,18 @@ reg [3:0] num_logic_high_samples;
 reg [15:0] recip = 1;
 //16 bit fixed pt arithmetic
 //integer recip = 4096; //2^16/20 = 4096
-initial begin
-     rms_temp=0;
-     num_logic_high_samples=0;
-end
-always@(posedge polling_complete_flag_s)begin
+//initial begin
+//     rms_temp=0;
+//     num_logic_high_samples=0;
+//end
+
+always@(posedge clk)begin
     if (rst)  begin
         rms_temp<=0;
         num_logic_high_samples<=0;
     end
     else begin
+         if(polling_complete_flag_s==1)begin
         //rms_temp<= ((special_count*special_count*recip)>>16)&8'b1; // divide by power of 2
         num_logic_high_samples<=special_count;
         if (num_logic_high_samples>0) begin
@@ -31,7 +34,6 @@ always@(posedge polling_complete_flag_s)begin
             rms_temp2<= rms_temp1>>16;
             rms_temp<=rms_temp2;
         end
-    end
 //reciprocal_approximation
     case(samp_num)
         4'd1: recip = 65536;
@@ -50,8 +52,9 @@ always@(posedge polling_complete_flag_s)begin
         4'd14: recip = 4681;
         4'd15: recip = 4369;
         default: recip=0;
-endcase
+    endcase
 end
-
+end
+end
 assign rms_radicand=4;
 endmodule

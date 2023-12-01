@@ -52,21 +52,14 @@ always @(posedge clk)begin
     end
     else begin
         adjusted_counter<=2^DEFAULT_BITWIDTH-1;
-        //adjusted_counter<=(adjusted_counter<=2^DEFAULT_BITWIDTH-1)? (2^DEFAULT_BITWIDTH+1):(adjusted_counter+1); 
-        adjusted_counter<=(adjusted_counter<=2^DEFAULT_BITWIDTH-1)? (adjusted_counter+1):(2^DEFAULT_BITWIDTH+1);
+        adjusted_counter<=adjusted_counter+1;
         if(adjusted_counter<width)begin
             temp_pwm<=1;
         end
         else begin        
             temp_pwm<=0;
         end
-        
-        if (div_clk_out) begin
-            sample_counts<=sample_counts+1;
-            if (temp_pwm)begin
-                number_of_samples_logic_high_temp<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
-            end
-        end
+
         temp_burst_count<=burst_count;    
         polling_complete_flag_temp<=(sample_counts>=15)?1'b1:1'b0; 
         //polling_complete_flag_temp<=(burst_count-temp_burst_count!=0)?1'b1:1'b0; 
@@ -116,9 +109,16 @@ always @(posedge clk)begin
 			width = 5'd0;
 		    end
 	endcase
+    
+end
+end
+always@(posedge div_clk_out) begin
+            sample_counts<=sample_counts+1;
+            if (temp_pwm)begin
+                number_of_samples_logic_high_temp<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
+            end
+        end
 
-end
-end
 
 assign number_of_samples_logic_high = number_of_samples_logic_high_temp; // only counts when samples high
 assign JA1=temp_pwm;

@@ -3,7 +3,7 @@
 module clk_divider_tb;
     reg clk; // Input clock signal
     reg rst;
-    wire [7:0] div_counter_out;
+    wire div_counter_out;
     
 //reg [7:0]div;
 //reg state [1:0] = 1'b0; //disabled

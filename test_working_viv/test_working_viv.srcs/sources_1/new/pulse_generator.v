@@ -5,7 +5,7 @@ module pulse_generator(
     input rst,
     input [3:0] sw,
     input [3:0] burst_count,
-    output wire [3:0] special_count, //1111+1=0
+    output wire [3:0] number_of_samples_logic_high, //1111+1=0
     output wire JA1,
     output wire polling_complete_flag_g,
     output wire [15:0] number_of_samples,
@@ -17,24 +17,26 @@ reg [4:0] adjusted_counter;
 reg [14:0] width; //duty cycle 32/4 = for 8 ticks  output a 1. for the remainder of the 32 tics output a 0.
 reg temp_pwm;
 reg [3:0] temp_burst_count;
-reg [3:0]special_counter; //counts amount of high signals per sample
-reg [3:0]special_counter_clock_counts; //number of samples during polling period
+reg [3:0]number_of_samples_logic_high_temp; //counts amount of high signals per sample
+reg [3:0]sample_counts; //number of samples during polling period
 reg polling_complete_flag_temp;
-wire div_clk;
+wire div_clk_out;
 	
-	clk_divider uut1 (
-	   .clk(clk),
-	   .div_counter(div_counter)
-    );
+clk_divider uut1 (
+    .clk(clk),              // Connect testbench clock to counter clock
+    .rst(rst),
+    .scaled_clk(div_clk_out)   // Connect output to wire 
+);
 
 initial begin
     counter=0;
     adjusted_counter=0;
     width=0;
     temp_pwm=0;
-    special_counter=0;
-    special_counter_clock_counts=0;
+    number_of_samples_logic_high_temp=0;
+    sample_counts=0;
     polling_complete_flag_temp=0;
+    temp_burst_count=0;
 end
 
 //output the signal
@@ -43,13 +45,14 @@ always @(posedge clk)begin
         counter=0;
         adjusted_counter=0;
         temp_pwm=0;
-        special_counter=0;
-        special_counter_clock_counts=0;
+        number_of_samples_logic_high_temp=0;
+        sample_counts=0;
         temp_burst_count=0;
         polling_complete_flag_temp=0;
     end
     else begin
-        polling_complete_flag_temp<=(special_counter_clock_counts>15)?1'b1:1'b0; //poll is complete after 15 samples taken
+        polling_complete_flag_temp<=(sample_counts>15)?1'b1:1'b0; 
+        polling_complete_flag_temp<=(burst_count-temp_burst_count!=0)?1'b1:1'b0; 
         case (sw)
         4'b0000: width = 6'd0; // duty cycle percentage 0%
         4'b0001: width = 6'd8;//(2^5)*0.25;
@@ -97,31 +100,29 @@ always @(posedge clk)begin
 		    end
 	endcase
 	    
-        temp_burst_count<=burst_count;      
-        adjusted_counter<=counter+1;
-        counter<=counter+1;
-        //special_counter_clock_counts<=special_counter_clock_counts+1;
-        if(counter<width)begin
+          
+        adjusted_counter<=(adjusted_counter<=counter)? (counter+1):(adjusted_counter+1); 
+        
+        if(adjusted_counter<width)begin
             temp_pwm<=1;
-            //count samples when high to compute rms value of signal
-            //special_counter<=(special_counter<16)?special_counter+1:0;
         end
         else begin        
             temp_pwm<=0;
         end
-       // if (special_counter_clock_counts>=16)
-       //     polling_complete_flag_temp<=1;
-
-    //if(temp_burst_count-burst_count!=0) begin
-       
-    //end
-
+        if (div_clk_out) begin
+            sample_counts<=sample_counts+1;
+            if (temp_pwm)begin
+                number_of_samples_logic_high_temp<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
+            end
+        end
+        temp_burst_count<=burst_count;    
 end
 end
-assign special_count = special_counter; // only counts when samples high
+
+assign number_of_samples_logic_high = number_of_samples_logic_high_temp; // only counts when samples high
 assign JA1=temp_pwm;
-assign number_of_samples=special_counter_clock_counts;
-assign polling_complete_flag_g =(special_counter==15) ? polling_complete_flag_temp :1'b0;
+assign number_of_samples=sample_counts;
+assign polling_complete_flag_g =(number_of_samples_logic_high_temp==15) ? polling_complete_flag_temp :1'b0;
 assign width_sig=width; //test
 
 endmodule

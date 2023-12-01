@@ -17,7 +17,7 @@ module pulse_generator_tb();
 		.rst(rst), 
 		.sw(sw),
         .burst_count(burst_count),
-        .special_count(special_count), //1111+1=0
+        .number_of_samples_logic_high(number_of_samples_logic_high), //1111+1=0
         .JA1(JA1),
         .polling_complete_flag_g(polling_complete_flag_g),
         .number_of_samples(number_of_samples),

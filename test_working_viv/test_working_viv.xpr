@@ -59,7 +59,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="FeatureSet" Val="FeatureSet_Classic"/>
-    <Option Name="WTXSimLaunchSim" Val="112"/>
+    <Option Name="WTXSimLaunchSim" Val="132"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -145,6 +145,7 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_2_clk_div" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_2_clk_div" RelGenDir="$PGENDIR/sim_2_clk_div">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_2_clk_div/new/clk_divider_tb.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="simulation"/>

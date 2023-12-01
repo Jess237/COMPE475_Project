@@ -31,3 +31,15 @@ source pulse_generator_tb.tcl
 close_sim
 launch_simulation
 source pulse_generator_tb.tcl
+close_sim
+launch_simulation
+source pulse_generator_tb.tcl
+close_sim
+launch_simulation
+source pulse_generator_tb.tcl
+close_sim
+launch_simulation
+source pulse_generator_tb.tcl
+close_sim
+launch_simulation
+source pulse_generator_tb.tcl

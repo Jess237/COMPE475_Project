@@ -40,6 +40,7 @@ always @(posedge clk)begin
         special_counter=0;
         special_counter_clock_counts=0;
         temp_burst_count=0;
+        polling_complete_flag_temp=0;
     end
     else begin
         case (sw)
@@ -88,27 +89,23 @@ always @(posedge clk)begin
 			width = 6'd0;
 		    end
 	endcase
+	    
         temp_burst_count<=burst_count;      
         adjusted_counter<=counter+1;
         counter<=counter+1;
         special_counter_clock_counts<=special_counter_clock_counts+1;
         if(counter<width)begin
             temp_pwm<=1;
-            if (special_counter_clock_counts<16) begin //want to make sure signal is high for 15 samples to determine presence of burst
-                special_counter<=special_counter+1;
-                polling_complete_flag_temp<=0;
-                 //enable polled signal to be passed to signal processor
-            end
-            else begin
-                special_counter<=0;
-                polling_complete_flag_temp<=1;
-            end
+            //count samples when high to compute rms value of signal
+            special_counter<=(special_counter<16)?special_counter+1:0;
         end
         else begin        
             temp_pwm<=0;
             special_counter<=0;
         end
- 
+        if (special_counter_clock_counts>=16)
+            polling_complete_flag_temp<=1;
+
 
     if(temp_burst_count-burst_count!=0) begin
         if (temp_pwm<=0) begin
@@ -119,10 +116,10 @@ always @(posedge clk)begin
 
 end
 end
-assign special_count = special_counter;
+assign special_count = special_counter; // only counts when samples high
 assign JA1=temp_pwm;
 assign number_of_samples=special_counter_clock_counts;
-assign polling_complete_flag_g = polling_complete_flag_temp;
+assign polling_complete_flag_g =(polling_complete_flag_temp==1) ? 1'b1 :1'b0;
 assign width_sig=width; //test
 
 endmodule

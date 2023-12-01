@@ -36,10 +36,10 @@ module pulse_generator_tb();
         sw=4'b0001;
         rst=0;
         #300
-        sw = 4'b1001;
+        sw = 4'b0001;
         rst=0;
         #30000
-        sw=4'b1011;
+        sw=4'b0011;
         rst=0;
         #300
         sw=12;

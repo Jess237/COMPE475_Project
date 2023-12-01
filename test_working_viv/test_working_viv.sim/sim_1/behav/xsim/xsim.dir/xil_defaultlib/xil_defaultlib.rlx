@@ -3,6 +3,6 @@
 Oct 13 2023
 20:47:58
 C:/COMPE475_Project/test_working_viv/test_working_viv.sim/sim_1/behav/xsim/glbl.v,1701383001,verilog,,,,glbl,,,,,,,,
-C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sim_1/new/pulse_generator_tb.v,1701415470,verilog,,,,pulse_generator_tb,,,,,,,,
+C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sim_1/new/pulse_generator_tb.v,1701421345,verilog,,,,pulse_generator_tb,,,,,,,,
 C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/clk_divider.v,1701417224,verilog,,C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v,,clk_divider,,,,,,,,
-C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v,1701419832,verilog,,C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sim_1/new/pulse_generator_tb.v,,pulse_generator,,,,,,,,
+C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v,1701420504,verilog,,C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sim_1/new/pulse_generator_tb.v,,pulse_generator,,,,,,,,

@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 
 module clk_divider_tb;
-    reg clk; // Input clock signal
+    reg clk; 
     reg rst;
-    wire div_counter_out;
+    wire div_clk_out;
     
 //reg [7:0]div;
 //reg state [1:0] = 1'b0; //disabled
@@ -13,7 +13,7 @@ module clk_divider_tb;
 clk_divider uut1 (
     .clk(clk),              // Connect testbench clock to counter clock
     .rst(rst),
-    .div_counter(div_counter_out)   // Connect counter output to wire for observation
+    .scaled_clk(div_clk_out)   // Connect output to wire for observation
 );
 
 initial begin

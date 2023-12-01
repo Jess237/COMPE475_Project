@@ -1,32 +1,31 @@
 `timescale 1ns / 1ps
 
-module clk_divider(
-    input clk, // Input clock signal
+module clk_divider#(BITWIDTH=5)(
+    input clk, 
     input rst,
-    output wire div_counter // 8-bit div_counter as an example
+    output wire scaled_clk
 );
 
-    reg [1:0] divider=2'b00;
-    reg toggle=1'b1;
-    //reg [7:0] sample_counter_temp;
+    reg [BITWIDTH-1:0] counter_div=0;
+    reg [BITWIDTH-1:0] temp=0;
+    
+    reg toggle=1'b0;
+    
     always @(posedge clk or negedge rst) begin
         if(~rst) begin
-            // Increment the div_counter when the divided clock toggles
-            //if (toggle==1'b1) sample_counter_temp <= sample_counter_temp + 1; 
-            // Generate a divided clock signal
-            if (divider == 2'b00) begin
+            
+            if (counter_div == 2^BITWIDTH-1) begin
                 toggle <= ~toggle;
-                divider <= 2'b01;
+                counter_div <= temp;
             end 
-            else divider <= divider + 1; 
-        end
-        else begin
-            //sample_counter_temp<=0;
+            else begin 
+                counter_div <= counter_div + 1; 
+            end
+            end
+        else      
             toggle<=0;
-            //toggle<=~toggle;
-        end
     end
-assign div_counter=toggle; //div_counter_out is 4 sys clock counts
-//assign div_counter=sample_counter_temp;
+assign scaled_clk=toggle; 
+
 endmodule
 

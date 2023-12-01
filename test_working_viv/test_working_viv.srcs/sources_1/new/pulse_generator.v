@@ -20,6 +20,12 @@ reg [3:0] temp_burst_count;
 reg [3:0]special_counter; //counts amount of high signals per sample
 reg [3:0]special_counter_clock_counts; //number of samples during polling period
 reg polling_complete_flag_temp;
+wire div_clk;
+	
+	clk_divider uut1 (
+	   .clk(clk),
+	   .div_counter(div_counter)
+    );
 
 initial begin
     counter=0;
@@ -94,19 +100,17 @@ always @(posedge clk)begin
         temp_burst_count<=burst_count;      
         adjusted_counter<=counter+1;
         counter<=counter+1;
-        special_counter_clock_counts<=special_counter_clock_counts+1;
+        //special_counter_clock_counts<=special_counter_clock_counts+1;
         if(counter<width)begin
             temp_pwm<=1;
             //count samples when high to compute rms value of signal
-            special_counter<=(special_counter<16)?special_counter+1:0;
+            //special_counter<=(special_counter<16)?special_counter+1:0;
         end
         else begin        
             temp_pwm<=0;
-            special_counter<=0;
         end
        // if (special_counter_clock_counts>=16)
        //     polling_complete_flag_temp<=1;
-
 
     //if(temp_burst_count-burst_count!=0) begin
        
@@ -117,7 +121,7 @@ end
 assign special_count = special_counter; // only counts when samples high
 assign JA1=temp_pwm;
 assign number_of_samples=special_counter_clock_counts;
-assign polling_complete_flag_g =(polling_complete_flag_temp==1) ? 1'b1 :1'b0;
+assign polling_complete_flag_g =(special_counter==15) ? polling_complete_flag_temp :1'b0;
 assign width_sig=width; //test
 
 endmodule

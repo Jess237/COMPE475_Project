@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 100ps / 1ps
 
 module clk_divider#(BITWIDTH=5)(
     input clk, 

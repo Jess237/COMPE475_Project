@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 100ps / 1ps
 
 module pulse_generator#(DEFAULT_BITWIDTH=5)(
     input clk,
@@ -10,10 +10,10 @@ module pulse_generator#(DEFAULT_BITWIDTH=5)(
     output wire polling_complete_flag_g,
     output wire [15:0] number_of_samples,
     output wire [14:0] width_sig, //test
-    output wire [DEFAULT_BITWIDTH:0]adjusted_counter_out //test
+    output wire [14:0]adjusted_counter_out //test
 );
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
-reg [DEFAULT_BITWIDTH-1:0] counter; // sets the period 11111+1 = 00000 (Daniel Ayala). counts from 0 up to 31. 2^5=32-1=11111
+//reg [DEFAULT_BITWIDTH-1:0] counter; // sets the period 11111+1 = 00000 (Daniel Ayala). counts from 0 up to 31. 2^5=32-1=11111
 reg [DEFAULT_BITWIDTH-1:0] adjusted_counter; 
 reg [14:0] width; //duty cycle 32/4 = for 8 ticks  output a 1. for the remainder of the 32 tics output a 0.
 reg [DEFAULT_BITWIDTH-1:0] zero = 0;
@@ -31,7 +31,6 @@ clk_divider uut1 (
 );
 
 initial begin
-    counter=0;
     adjusted_counter=0;
     width=0;
     temp_pwm=0;
@@ -44,7 +43,6 @@ end
 //output the signal
 always @(posedge clk)begin
     if (rst) begin
-        counter=0;
         adjusted_counter=0;
         temp_pwm=0;
         number_of_samples_logic_high_temp=0;
@@ -53,8 +51,25 @@ always @(posedge clk)begin
         polling_complete_flag_temp=0;
     end
     else begin
-        polling_complete_flag_temp<=(sample_counts>15)?1'b1:1'b0; 
-        polling_complete_flag_temp<=(burst_count-temp_burst_count!=0)?1'b1:1'b0; 
+        adjusted_counter<=2^DEFAULT_BITWIDTH-1;
+        //adjusted_counter<=(adjusted_counter<=2^DEFAULT_BITWIDTH-1)? (2^DEFAULT_BITWIDTH+1):(adjusted_counter+1); 
+        adjusted_counter<=(adjusted_counter<=2^DEFAULT_BITWIDTH-1)? (adjusted_counter+1):(2^DEFAULT_BITWIDTH+1);
+        if(adjusted_counter<width)begin
+            temp_pwm<=1;
+        end
+        else begin        
+            temp_pwm<=0;
+        end
+        
+        if (div_clk_out) begin
+            sample_counts<=sample_counts+1;
+            if (temp_pwm)begin
+                number_of_samples_logic_high_temp<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
+            end
+        end
+        temp_burst_count<=burst_count;    
+        polling_complete_flag_temp<=(sample_counts>=15)?1'b1:1'b0; 
+        //polling_complete_flag_temp<=(burst_count-temp_burst_count!=0)?1'b1:1'b0; 
         case (sw)
         4'b0000: width = 6'd0; // duty cycle percentage 0%
         4'b0001: width = 6'd8;//(2^5)*0.25;
@@ -87,7 +102,7 @@ always @(posedge clk)begin
         4'b1100:width=15'd0;
         4'b1101:begin
             width = 15'd8192; //25%
-            adjusted_counter= {counter,10'b0};
+            adjusted_counter= {zero,10'b0};
         end
         4'b1110: begin
             width = 15'd16384; // 50%
@@ -101,23 +116,7 @@ always @(posedge clk)begin
 			width = 5'd0;
 		    end
 	endcase
-	    
-          
-        adjusted_counter<=(adjusted_counter<=counter)? (counter+1):(adjusted_counter+1); 
-        
-        if(adjusted_counter<width)begin
-            temp_pwm<=1;
-        end
-        else begin        
-            temp_pwm<=0;
-        end
-        if (div_clk_out) begin
-            sample_counts<=sample_counts+1;
-            if (temp_pwm)begin
-                number_of_samples_logic_high_temp<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
-            end
-        end
-        temp_burst_count<=burst_count;    
+
 end
 end
 

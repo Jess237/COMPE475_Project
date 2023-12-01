@@ -43,6 +43,7 @@ always @(posedge clk)begin
         polling_complete_flag_temp=0;
     end
     else begin
+        polling_complete_flag_temp<=(special_counter_clock_counts>15)?1'b1:1'b0; //poll is complete after 15 samples taken
         case (sw)
         4'b0000: width = 6'd0; // duty cycle percentage 0%
         4'b0001: width = 6'd8;//(2^5)*0.25;
@@ -103,16 +104,13 @@ always @(posedge clk)begin
             temp_pwm<=0;
             special_counter<=0;
         end
-        if (special_counter_clock_counts>=16)
-            polling_complete_flag_temp<=1;
+       // if (special_counter_clock_counts>=16)
+       //     polling_complete_flag_temp<=1;
 
 
-    if(temp_burst_count-burst_count!=0) begin
-        if (temp_pwm<=0) begin
-            special_counter<=0;
-            special_counter_clock_counts<=0;
-        end
-    end
+    //if(temp_burst_count-burst_count!=0) begin
+       
+    //end
 
 end
 end

@@ -114,8 +114,10 @@ end
 end
 always@(posedge div_clk_out) begin
             sample_counts<=sample_counts+1;
+            polling_complete_flag_temp =(number_of_samples_logic_high_temp==15) ? 1'b1 :1'b0;
             if (temp_pwm)begin
                 number_of_samples_logic_high_temp<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
+                
             end
         end
 
@@ -123,7 +125,7 @@ always@(posedge div_clk_out) begin
 assign number_of_samples_logic_high = number_of_samples_logic_high_temp; // only counts when samples high
 assign JA1=temp_pwm;
 assign number_of_samples=sample_counts;
-assign polling_complete_flag_g =(number_of_samples_logic_high_temp==15) ? polling_complete_flag_temp :1'b0;
+assign polling_complete_flag_g = polling_complete_flag_temp;
 assign width_sig=width; //test
 assign adjusted_counter_out=adjusted_counter;
 

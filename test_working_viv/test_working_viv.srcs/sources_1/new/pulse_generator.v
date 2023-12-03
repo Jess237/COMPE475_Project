@@ -103,7 +103,7 @@ always@(sw) begin
     end
 end
 
-always @(posedge clk or negedge rst) begin
+always @(posedge clk) begin
     if (~rst && ~sw_rst) begin
         sample_counts<=sample_counts+1;
         polling_complete_flag_temp <=(number_of_samples_logic_high_temp==15) ? 1'b1 :1'b0;
@@ -112,14 +112,14 @@ always @(posedge clk or negedge rst) begin
         end
     end
     else if (rst | sw_rst) begin
-        number_of_samples_logic_high_temp=0;
-        sample_counts=0;
-        polling_complete_flag_temp=0;
+        number_of_samples_logic_high_temp<=0;
+        sample_counts<=0;
+        polling_complete_flag_temp<=0;
     end
 end 
 
 always@(posedge sw_rst) begin     
-    if (rst | ~sw_rst) begin
+    if (rst | sw_rst) begin
         adjusted_counter1<=0;
         adjusted_counter2<=0;
         adjusted_counter3<=0;

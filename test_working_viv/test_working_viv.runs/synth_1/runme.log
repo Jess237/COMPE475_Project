@@ -16,7 +16,6 @@ ECHO is off.
 Sourcing tcl script 'C:/Users/rojo_/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
 source PWM_Generator.tcl -notrace
 WARNING: [Board 49-91] Board repository path 'C:/Xilinx/BoardStore/XilinxBoardStore-2023.2' does not exist, it will not be used to search board files.
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 486.375 ; gain = 181.504
 Command: read_checkpoint -auto_incremental -incremental C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/utils_1/imports/synth_1/PWM_Generator.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/utils_1/imports/synth_1/PWM_Generator.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -29,9 +28,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 33128
+INFO: [Synth 8-7075] Helper process launched with PID 10164
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1319.750 ; gain = 439.316
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.039 ; gain = 439.234
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'PWM_Generator' [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/PWM_Generator.v:3]
 INFO: [Synth 8-6157] synthesizing module 'pulse_generator' [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v:3]
@@ -40,14 +39,219 @@ INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (0#1) [C:/COMPE475_P
 INFO: [Synth 8-226] default block is never used [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v:84]
 WARNING: [Synth 8-567] referenced signal 'rst' should be on the sensitivity list [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v:80]
 INFO: [Synth 8-6155] done synthesizing module 'pulse_generator' (0#1) [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v:3]
-ERROR: [Synth 8-685] variable 'JA1' should not be used in output port connection [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/PWM_Generator.v:27]
-ERROR: [Synth 8-6156] failed synthesizing module 'PWM_Generator' [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/PWM_Generator.v:3]
+WARNING: [Synth 8-7071] port 'burst_counter_history_out' of module 'pulse_generator' is unconnected for instance 'uut' [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/PWM_Generator.v:18]
+WARNING: [Synth 8-7023] instance 'uut' of module 'pulse_generator' has 9 connections declared, but only 8 given [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/PWM_Generator.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'PWM_Generator' (0#1) [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/PWM_Generator.v:3]
+WARNING: [Synth 8-7137] Register toggle_reg in module clk_divider has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/clk_divider.v:18]
+WARNING: [Synth 8-7137] Register counter_div_reg in module clk_divider has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/clk_divider.v:17]
+WARNING: [Synth 8-3848] Net burst_counter_history_out in module/entity pulse_generator does not have driver. [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v:11]
+WARNING: [Synth 8-7129] Port burst_counter_history_out[3] in module pulse_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port burst_counter_history_out[2] in module pulse_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port burst_counter_history_out[1] in module pulse_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port burst_counter_history_out[0] in module pulse_generator is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1426.555 ; gain = 546.121
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1428.828 ; gain = 548.023
 ---------------------------------------------------------------------------------
-RTL Elaboration failed
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1428.828 ; gain = 548.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1428.828 ; gain = 548.023
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1428.828 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/constrs_1/new/basys3modconstraint.xdc]
+Finished Parsing XDC File [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/constrs_1/new/basys3modconstraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/constrs_1/new/basys3modconstraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PWM_Generator_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PWM_Generator_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1524.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1524.637 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'width_reg' [C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v:85]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   15 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (uut/width_reg[9]) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/uut1/toggle_reg_C) is unused and will be removed from module PWM_Generator.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (uut/width_reg[14]) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/width_reg[13]) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/width_reg[12]) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/width_reg[11]) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/width_reg[10]) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/width_reg[6]) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/width_reg[5]) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/width_reg[4]) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/width_reg[3]) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/uut1/toggle_reg_LDC) is unused and will be removed from module PWM_Generator.
+WARNING: [Synth 8-3332] Sequential element (uut/uut1/toggle_reg_P) is unused and will be removed from module PWM_Generator.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1524.637 ; gain = 643.832
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1524.637 ; gain = 548.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1524.637 ; gain = 643.832
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1524.637 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1524.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 47bd4138
 INFO: [Common 17-83] Releasing license: Synthesis
-16 Infos, 2 Warnings, 0 Critical Warnings and 3 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  3 12:46:15 2023...
+26 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1524.637 ; gain = 1037.012
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1524.637 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/COMPE475_Project/test_working_viv/test_working_viv.runs/synth_1/PWM_Generator.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PWM_Generator_utilization_synth.rpt -pb PWM_Generator_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  3 13:17:43 2023...

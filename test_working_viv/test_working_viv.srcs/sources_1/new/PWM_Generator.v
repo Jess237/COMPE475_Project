@@ -3,10 +3,9 @@
 module PWM_Generator(
     input clk,
     input rst,
-    input sw,
+    input [3:0] sw,
     output wire JA1
     );
-
 
     wire [15:0] number_of_samples_logic_high;
     wire polling_complete_flag_g;
@@ -21,12 +20,12 @@ module PWM_Generator(
 		.rst(rst), 
 		.sw(sw),
         .number_of_samples_logic_high(number_of_samples_logic_high), //1111+1=0
-        .JA1(JA1),
+        .pwm(JA1),
         .polling_complete_flag_g(polling_complete_flag_g),
         .number_of_samples(number_of_samples),
         .width_sig(width_sig)
         );
-
+//assign JA_1 = JA[0];
     //case
    
     

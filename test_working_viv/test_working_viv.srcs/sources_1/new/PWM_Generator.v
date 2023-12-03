@@ -28,7 +28,6 @@ module PWM_Generator(
         );
 
     //case
-endmodule
    
     
 endmodule

@@ -1,0 +1,4 @@
+Running: xsim.dir/pulse_generator_tb_behav/xsimk.exe -simmode gui -wdb pulse_generator_tb_behav.wdb -simrunnum 0 -socket 50300
+Design successfully loaded
+Design Loading Memory Usage: 7916 KB (Peak: 7916 KB)
+Design Loading CPU Usage: 0 ms

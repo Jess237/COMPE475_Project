@@ -33,7 +33,11 @@ module PWM_Generator(
         .number_of_samples_out(number_of_samples),
         .width_sig(width_sig),
         .pwm(JA1),
-        .switchpressed(sw_rst)
+        .switchpressed(sw_rst),
+        .adj1(adj1),
+        .adj2(adj2),
+        .adj3(adj3),
+        .adj4(adj4)
         );
 //assign JA_1 = JA[0];
     //case

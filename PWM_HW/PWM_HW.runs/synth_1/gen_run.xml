@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1701686786" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/PWM_Generator.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1701713615" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/PWM_Generator.dcp">
   <File Type="PA-TCL" Name="PWM_Generator.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="PWM_Generator_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="PWM_Generator_reports.tcl"/>

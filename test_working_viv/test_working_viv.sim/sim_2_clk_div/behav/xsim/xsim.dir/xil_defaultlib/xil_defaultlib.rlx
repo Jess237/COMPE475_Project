@@ -1,8 +1,0 @@
-0.7
-2020.2
-Oct 13 2023
-20:47:58
-C:/COMPE475_Project/test_working_viv/test_working_viv.sim/sim_2_clk_div/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
-C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sim_2_clk_div/new/clk_divider_tb.v,1701408479,verilog,,,,clk_divider_tb,,,,,,,,
-C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/clk_divider.v,1701410413,verilog,,C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sim_2_clk_div/new/clk_divider_tb.v,,clk_divider,,,,,,,,
-C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v,1701391797,verilog,,,,pulse_generator,,,,,,,,

@@ -4,14 +4,17 @@ module pulse_generator#(DEFAULT_BITWIDTH=5)(
     input clk,
     input rst,
     input [3:0] sw,
-    input reg switch_reset_temp,
-    output wire [15:0] number_of_samples_logic_high, //1111+1=0
+    input wire [15:0] number_of_samples_logic_high_temp,
+    input wire [15:0] sample_counts,
+    input wire switch_reset_temp,
+    output reg [15:0] number_of_samples_logic_high, //1111+1=0
     output wire polling_complete_flag_g,
-    output wire [15:0] number_of_samples,
-    output wire [14:0] width_sig, //test
+    output wire [15:0] number_of_samples_out,
+    output wire [15:0] width_sig, //test
     output wire pwm,
-    output reg switchpressed
+    output wire switchpressed
 );
+reg [15:0] number_of_samples;
 reg sw_rst;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 reg [DEFAULT_BITWIDTH-1:0] adjusted_counter1; 
 reg [DEFAULT_BITWIDTH+2:0] adjusted_counter2; 
@@ -19,8 +22,6 @@ reg [DEFAULT_BITWIDTH+6:0] adjusted_counter3;
 reg [DEFAULT_BITWIDTH+9:0] adjusted_counter4; 
 reg [14:0] width; //duty cycle 32/4 = for 8 ticks  output a 1. for the remainder of the 32 tics output a 0.
 reg temp_pwm;
-reg [3:0]number_of_samples_logic_high_temp; //counts amount of high signals per sample
-reg [3:0]sample_counts; //number of samples during polling period
 reg polling_complete_flag_temp;
 
 wire div_clk_out;
@@ -39,19 +40,19 @@ always @(posedge div_clk_out)begin
     end
     else begin
         if (~switch_reset_temp) begin
-            if (~sw[3] & ~sw[2])begin
+            if (~sw[3] & ~sw[2] & (sw[1]|sw[0]))begin
                 if(adjusted_counter1<width)temp_pwm<=1;
                 else temp_pwm<=0;
             end
-            if (~sw[3]& sw[2])begin   
+            if (~sw[3]& sw[2]& (sw[1]|sw[0]))begin   
                 if(adjusted_counter2<width)temp_pwm<=1;
                 else temp_pwm<=0;
             end
-            if (sw[3] & ~sw[2])begin
+            if (sw[3] & ~sw[2]& (sw[1]|sw[0]))begin
                 if(adjusted_counter3<width)temp_pwm<=1;
                 else temp_pwm<=0;
             end
-            if (sw[3] & sw[2]) begin
+            if (sw[3] & sw[2]& (sw[1]|sw[0])) begin
                 if(adjusted_counter4<width)temp_pwm<=1;
                 else temp_pwm<=0;
             end
@@ -60,9 +61,9 @@ always @(posedge div_clk_out)begin
    end
 end
    
-always@(sw) begin     
+always@(sw or rst) begin     
     if (~rst) begin  
-        switch_reset_temp<= 1;
+        sw_rst<=(sw)?1'b1:1'b0;
         case (sw)
         4'b0000: width = 15'd0; // duty cycle percentage 0%
         4'b0001: width = 15'd8;//(2^5)*0.25;
@@ -87,41 +88,56 @@ end
 
 
 always @(posedge clk) begin 
-    if (~rst && ~switch_reset_temp) begin
-        if (~sw[3] & ~sw[2])begin  
-            adjusted_counter1<=adjusted_counter1+1;
-        end
-        if (~sw[3]& sw[2])begin   
-            adjusted_counter2<=adjusted_counter2+1;
-        end
-        if (sw[3] & ~sw[2])begin
-            adjusted_counter3<=adjusted_counter3+1;
-        end
-        if (sw[3] & sw[2]) begin
-            adjusted_counter4<=adjusted_counter4+1;
-        end
-        sample_counts<=sample_counts+1;
-        polling_complete_flag_temp <=(number_of_samples_logic_high_temp==15) ? 1'b1 :1'b0;
-        if (temp_pwm)begin
-            number_of_samples_logic_high_temp<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
-        end
-    end
-    else if (rst | switch_reset_temp) begin
-        number_of_samples_logic_high_temp<=0;
-        sample_counts<=0;
-        polling_complete_flag_temp<=0;
+    if (rst | switch_reset_temp) begin
         adjusted_counter1<=0;
         adjusted_counter2<=0;
         adjusted_counter3<=0;
         adjusted_counter4<=0;
     end
+    else begin
+        if (~sw[3] & ~sw[2])begin  
+            adjusted_counter1<=adjusted_counter1+1;
+             if (temp_pwm)begin
+            number_of_samples_logic_high<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
+            end
+            number_of_samples <= (sample_counts>=number_of_samples)? (number_of_samples+1):sample_counts;
+             polling_complete_flag_temp <=(number_of_samples_logic_high_temp==15) ? 1'b1 :1'b0;
+        end
+        
+        if (~sw[3]& sw[2])begin   
+            adjusted_counter2<=adjusted_counter2+1;
+             if (temp_pwm)begin
+            number_of_samples_logic_high<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
+            end
+              number_of_samples <= (sample_counts>=number_of_samples)? (number_of_samples+1):sample_counts;
+               polling_complete_flag_temp <=(number_of_samples_logic_high_temp==15) ? 1'b1 :1'b0;
+        end
+        
+        if (sw[3] & ~sw[2])begin
+            adjusted_counter3<=adjusted_counter3+1;
+             if (temp_pwm)begin
+            number_of_samples_logic_high<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
+            end
+              number_of_samples <= (sample_counts>=number_of_samples)? (number_of_samples+1):sample_counts;
+               polling_complete_flag_temp <=(number_of_samples_logic_high_temp==15) ? 1'b1 :1'b0;
+            end
+            
+        if (sw[3] & sw[2]) begin
+            adjusted_counter4<=adjusted_counter4+1;
+             if (temp_pwm)begin
+            number_of_samples_logic_high<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;     
+            end
+              number_of_samples <= (sample_counts>=number_of_samples)? (number_of_samples+1):sample_counts;
+               polling_complete_flag_temp <=(number_of_samples_logic_high_temp==15) ? 1'b1 :1'b0;
+            end
+
+    end
+  
+   
 end 
 
-      
-
-assign number_of_samples_logic_high = number_of_samples_logic_high_temp; // only counts when samples high
+assign number_of_samples_out=number_of_samples;      
 assign pwm=temp_pwm;
-assign number_of_samples=sample_counts;
 assign polling_complete_flag_g = polling_complete_flag_temp;
 assign width_sig=width; //test\
 assign switchpressed=switch_reset_temp;

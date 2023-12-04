@@ -4,14 +4,18 @@ module PWM_Generator(
     input clk,
     input rst,
     input [3:0] sw,
-    input reg sw_rst_temp,
+    input wire switch_reset_temp,
+    input wire [15:0] number_of_samples_logic_high_temp,
+    input wire [15:0] sample_counts,
     output wire JA1,
-    output wire sw_rst
+    output wire sw_rst,
+    output wire [15:0] number_of_samples_logic_high,
+    output wire polling_complete_flag_g,
+    output wire [15:0] number_of_samples,
+    output wire [15:0] width_sig
     );
-    wire [15:0] number_of_samples_logic_high;
-    wire polling_complete_flag_g;
-    wire [15:0] number_of_samples;
-    wire [14:0] width_sig;//for testing only
+   
+    
 
 
         //reg [1:0] pwm_en_state;
@@ -21,10 +25,12 @@ module PWM_Generator(
         .clk(clk), 
 		.rst(rst), 
 		.sw(sw),
-		.switch_reset_temp(sw_rst_temp),
+		.number_of_samples_logic_high_temp(number_of_samples_logic_high_temp), 	
+		.sample_counts(sample_counts),
+		.switch_reset_temp(switch_reset_temp),
         .number_of_samples_logic_high(number_of_samples_logic_high), 
         .polling_complete_flag_g(polling_complete_flag_g),
-        .number_of_samples(number_of_samples),
+        .number_of_samples_out(number_of_samples),
         .width_sig(width_sig),
         .pwm(JA1),
         .switchpressed(sw_rst)

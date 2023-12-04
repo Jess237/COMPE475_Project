@@ -24,7 +24,7 @@ reg [3:0] burst_count_history;
 reg [3:0]number_of_samples_logic_high_temp; //counts amount of high signals per sample
 reg [3:0]sample_counts; //number of samples during polling period
 reg polling_complete_flag_temp;
-reg sw_rst; //resets counters whenever switch is pressed
+reg sw_rst_temp; //resets counters whenever switch is pressed
 wire div_clk_out;
 	
 clk_divider uut1 (
@@ -34,7 +34,7 @@ clk_divider uut1 (
 );
 
 initial begin
-    sw_rst = 0;
+    sw_rst_temp = 0;
     adjusted_counter1=0; 
     adjusted_counter2=0; 
     adjusted_counter3=0; 
@@ -51,7 +51,7 @@ always @(posedge div_clk_out)begin
         temp_pwm<=0;
     end
     else begin
-        if (~sw_rst) begin
+        if (~sw_rst_temp) begin
             if (~sw[3] & ~sw[2])begin
                 if(adjusted_counter1<width)temp_pwm<=1;
                 else temp_pwm<=0;
@@ -73,13 +73,14 @@ always @(posedge div_clk_out)begin
                 adjusted_counter4<=adjusted_counter4+1;
             end
         end
+        else sw_rst_temp<=(sw_rst_temp)?1'b0:1'b1;
    end
 end
    
 always@(sw) begin     
-    if (rst) sw_rst<=0;
+    if (rst) sw_rst_temp<=0;
     else if (~rst) begin  
-        sw_rst <= 1;
+        sw_rst_temp<= ~sw_rst_temp;
         case (sw)
         4'b0000: width = 15'd0; // duty cycle percentage 0%
         4'b0001: width = 15'd8;//(2^5)*0.25;
@@ -103,28 +104,39 @@ always@(sw) begin
 end
 
 always @(posedge clk) begin
-    if (~rst && ~sw_rst) begin
+    if (~rst && ~sw_rst_temp) begin
+        if (~sw[3] & ~sw[2])begin  
+            adjusted_counter1<=adjusted_counter1+1;
+        end
+        if (~sw[3]& sw[2])begin   
+            adjusted_counter2<=adjusted_counter2+1;
+        end
+        if (sw[3] & ~sw[2])begin
+            adjusted_counter3<=adjusted_counter3+1;
+        end
+        if (sw[3] & sw[2]) begin
+            adjusted_counter4<=adjusted_counter4+1;
+        end
         sample_counts<=sample_counts+1;
         polling_complete_flag_temp <=(number_of_samples_logic_high_temp==15) ? 1'b1 :1'b0;
         if (temp_pwm)begin
             number_of_samples_logic_high_temp<=(number_of_samples_logic_high_temp<16)?number_of_samples_logic_high_temp+1:0;
         end
     end
-    else if (rst | sw_rst) begin
+    else if (rst | sw_rst_temp) begin
         number_of_samples_logic_high_temp<=0;
         sample_counts<=0;
         polling_complete_flag_temp<=0;
     end
 end 
 
-always@(posedge sw_rst) begin     
-    if (rst | sw_rst) begin
+always@(posedge sw_rst_temp) begin     
         adjusted_counter1<=0;
         adjusted_counter2<=0;
         adjusted_counter3<=0;
         adjusted_counter4<=0;
-    end
 end
+      
 
 assign number_of_samples_logic_high = number_of_samples_logic_high_temp; // only counts when samples high
 assign pwm=temp_pwm;

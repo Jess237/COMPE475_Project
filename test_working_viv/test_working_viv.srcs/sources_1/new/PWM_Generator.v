@@ -19,11 +19,11 @@ module PWM_Generator(
         .clk(clk), 
 		.rst(rst), 
 		.sw(sw),
-        .number_of_samples_logic_high(number_of_samples_logic_high), //1111+1=0
-        .pwm(JA1),
+        .number_of_samples_logic_high(number_of_samples_logic_high), 
         .polling_complete_flag_g(polling_complete_flag_g),
         .number_of_samples(number_of_samples),
-        .width_sig(width_sig)
+        .width_sig(width_sig),
+        .pwm(JA1)
         );
 //assign JA_1 = JA[0];
     //case

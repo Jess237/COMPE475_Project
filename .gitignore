@@ -1,3 +1,16 @@
 #ignore LUT source files directory
 LUT/**
-/LUT source files
+LUT source files/
+PWM_Test results/
+Project 1 Results/
+Project 2 Results/
+*.wdb
+
+**/sim*
+
+
+**/sim*
+
+*.sim
+
+test_working_viv/test_working_viv.sim/

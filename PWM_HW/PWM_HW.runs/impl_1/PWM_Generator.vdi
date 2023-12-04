@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sun Dec  3 17:57:20 2023
-# Process ID: 24372
+# Start of session at: Sun Dec  3 19:39:18 2023
+# Process ID: 32432
 # Current directory: C:/COMPE475_Project/PWM_HW/PWM_HW.runs/impl_1
 # Command line: vivado.exe -log PWM_Generator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PWM_Generator.tcl -notrace
 # Log file: C:/COMPE475_Project/PWM_HW/PWM_HW.runs/impl_1/PWM_Generator.vdi
@@ -13,20 +13,19 @@
 #-----------------------------------------------------------
 Sourcing tcl script 'C:/Users/rojo_/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
 source PWM_Generator.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 489.766 ; gain = 180.309
 Command: link_design -top PWM_Generator -part xc7a35tcpg236-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 886.141 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 886.691 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2023.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/constrs_1/new/basys3pwmconstr.xdc]
 Finished Parsing XDC File [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/constrs_1/new/basys3pwmconstr.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1017.609 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1017.930 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -39,55 +38,15 @@ Running DRC as a precondition to command opt_design
 
 Starting DRC Task
 INFO: [DRC 23-27] Running DRC with 2 threads
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter1[0] has multiple drivers: uut/adjusted_counter1_reg[0]__1/Q, uut/adjusted_counter1_reg[0]__0/Q, and uut/adjusted_counter1_reg[0]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter1[1] has multiple drivers: uut/adjusted_counter1_reg[1]/Q, uut/adjusted_counter1_reg[1]__0/Q, and uut/adjusted_counter1_reg[1]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter1[2] has multiple drivers: uut/adjusted_counter1_reg[2]__0/Q, uut/adjusted_counter1_reg[2]/Q, and uut/adjusted_counter1_reg[2]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter1[3] has multiple drivers: uut/adjusted_counter1_reg[3]__0/Q, uut/adjusted_counter1_reg[3]__1/Q, and uut/adjusted_counter1_reg[3]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter1[4] has multiple drivers: uut/adjusted_counter1_reg[4]__1/Q, uut/adjusted_counter1_reg[4]/Q, and uut/adjusted_counter1_reg[4]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter2[0] has multiple drivers: uut/adjusted_counter2_reg[0]__1/Q, uut/adjusted_counter2_reg[0]/Q, and uut/adjusted_counter2_reg[0]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter2[1] has multiple drivers: uut/adjusted_counter2_reg[1]/Q, uut/adjusted_counter2_reg[1]__1/Q, and uut/adjusted_counter2_reg[1]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter2[2] has multiple drivers: uut/adjusted_counter2_reg[2]__1/Q, uut/adjusted_counter2_reg[2]__0/Q, and uut/adjusted_counter2_reg[2]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter2[3] has multiple drivers: uut/adjusted_counter2_reg[3]__0/Q, uut/adjusted_counter2_reg[3]__1/Q, and uut/adjusted_counter2_reg[3]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter2[4] has multiple drivers: uut/adjusted_counter2_reg[4]/Q, uut/adjusted_counter2_reg[4]__0/Q, and uut/adjusted_counter2_reg[4]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter2[5] has multiple drivers: uut/adjusted_counter2_reg[5]__1/Q, uut/adjusted_counter2_reg[5]__0/Q, and uut/adjusted_counter2_reg[5]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter2[6] has multiple drivers: uut/adjusted_counter2_reg[6]__0/Q, uut/adjusted_counter2_reg[6]/Q, and uut/adjusted_counter2_reg[6]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter2[7] has multiple drivers: uut/adjusted_counter2_reg[7]/Q, uut/adjusted_counter2_reg[7]__0/Q, and uut/adjusted_counter2_reg[7]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[0] has multiple drivers: uut/adjusted_counter3_reg[0]/Q, uut/adjusted_counter3_reg[0]__1/Q, and uut/adjusted_counter3_reg[0]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[10] has multiple drivers: uut/adjusted_counter3_reg[10]__1/Q, uut/adjusted_counter3_reg[10]/Q, and uut/adjusted_counter3_reg[10]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[11] has multiple drivers: uut/adjusted_counter3_reg[11]__1/Q, uut/adjusted_counter3_reg[11]__0/Q, and uut/adjusted_counter3_reg[11]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[1] has multiple drivers: uut/adjusted_counter3_reg[1]__1/Q, uut/adjusted_counter3_reg[1]/Q, and uut/adjusted_counter3_reg[1]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[2] has multiple drivers: uut/adjusted_counter3_reg[2]__1/Q, uut/adjusted_counter3_reg[2]__0/Q, and uut/adjusted_counter3_reg[2]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[3] has multiple drivers: uut/adjusted_counter3_reg[3]__1/Q, uut/adjusted_counter3_reg[3]/Q, and uut/adjusted_counter3_reg[3]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[4] has multiple drivers: uut/adjusted_counter3_reg[4]__0/Q, uut/adjusted_counter3_reg[4]__1/Q, and uut/adjusted_counter3_reg[4]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[5] has multiple drivers: uut/adjusted_counter3_reg[5]/Q, uut/adjusted_counter3_reg[5]__0/Q, and uut/adjusted_counter3_reg[5]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[6] has multiple drivers: uut/adjusted_counter3_reg[6]/Q, uut/adjusted_counter3_reg[6]__0/Q, and uut/adjusted_counter3_reg[6]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[7] has multiple drivers: uut/adjusted_counter3_reg[7]__1/Q, uut/adjusted_counter3_reg[7]__0/Q, and uut/adjusted_counter3_reg[7]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[8] has multiple drivers: uut/adjusted_counter3_reg[8]/Q, uut/adjusted_counter3_reg[8]__1/Q, and uut/adjusted_counter3_reg[8]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter3[9] has multiple drivers: uut/adjusted_counter3_reg[9]__0/Q, uut/adjusted_counter3_reg[9]__1/Q, and uut/adjusted_counter3_reg[9]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[0] has multiple drivers: uut/adjusted_counter4_reg[0]/Q, uut/adjusted_counter4_reg[0]__0/Q, and uut/adjusted_counter4_reg[0]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[10] has multiple drivers: uut/adjusted_counter4_reg[10]__1/Q, uut/adjusted_counter4_reg[10]__0/Q, and uut/adjusted_counter4_reg[10]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[11] has multiple drivers: uut/adjusted_counter4_reg[11]__1/Q, uut/adjusted_counter4_reg[11]__0/Q, and uut/adjusted_counter4_reg[11]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[12] has multiple drivers: uut/adjusted_counter4_reg[12]/Q, uut/adjusted_counter4_reg[12]__0/Q, and uut/adjusted_counter4_reg[12]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[13] has multiple drivers: uut/adjusted_counter4_reg[13]__0/Q, uut/adjusted_counter4_reg[13]__1/Q, and uut/adjusted_counter4_reg[13]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[14] has multiple drivers: uut/adjusted_counter4_reg[14]__1/Q, uut/adjusted_counter4_reg[14]__0/Q, and uut/adjusted_counter4_reg[14]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[1] has multiple drivers: uut/adjusted_counter4_reg[1]__1/Q, uut/adjusted_counter4_reg[1]__0/Q, and uut/adjusted_counter4_reg[1]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[2] has multiple drivers: uut/adjusted_counter4_reg[2]__0/Q, uut/adjusted_counter4_reg[2]/Q, and uut/adjusted_counter4_reg[2]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[3] has multiple drivers: uut/adjusted_counter4_reg[3]__0/Q, uut/adjusted_counter4_reg[3]/Q, and uut/adjusted_counter4_reg[3]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[4] has multiple drivers: uut/adjusted_counter4_reg[4]__1/Q, uut/adjusted_counter4_reg[4]/Q, and uut/adjusted_counter4_reg[4]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[5] has multiple drivers: uut/adjusted_counter4_reg[5]/Q, uut/adjusted_counter4_reg[5]__1/Q, and uut/adjusted_counter4_reg[5]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[6] has multiple drivers: uut/adjusted_counter4_reg[6]__0/Q, uut/adjusted_counter4_reg[6]__1/Q, and uut/adjusted_counter4_reg[6]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[7] has multiple drivers: uut/adjusted_counter4_reg[7]/Q, uut/adjusted_counter4_reg[7]__1/Q, and uut/adjusted_counter4_reg[7]__0/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[8] has multiple drivers: uut/adjusted_counter4_reg[8]__1/Q, uut/adjusted_counter4_reg[8]__0/Q, and uut/adjusted_counter4_reg[8]/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/adjusted_counter4[9] has multiple drivers: uut/adjusted_counter4_reg[9]__0/Q, uut/adjusted_counter4_reg[9]/Q, and uut/adjusted_counter4_reg[9]__1/Q.
-ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/sw_rst_temp_reg_n_0 has multiple drivers: uut/adjusted_counter1[4]_i_1/O, and uut/sw_rst_temp_reg/Q.
-INFO: [Project 1-461] DRC finished with 41 Errors
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net uut/rst_IBUF has multiple drivers: rst_IBUF_inst/O, and uut/sw_rst_temp_reg/Q.
+INFO: [Project 1-461] DRC finished with 1 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.814 . Memory (MB): peak = 1043.512 ; gain = 21.930
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1040.883 ; gain = 18.941
 INFO: [Common 17-83] Releasing license: Implementation
-12 Infos, 0 Warnings, 0 Critical Warnings and 42 Errors encountered.
+12 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
 opt_design failed
 ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
 
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  3 17:57:33 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  3 19:39:31 2023...

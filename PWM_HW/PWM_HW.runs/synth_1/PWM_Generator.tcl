@@ -70,7 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 set_param ced.repoPaths C:/Xilinx/BoardStore/XilinxCEDStore-2023.2
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -105,6 +107,8 @@ read_xdc C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/constrs_1/new/basys3pwmconstr.xd
 set_property used_in_implementation false [get_files C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/constrs_1/new/basys3pwmconstr.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/utils_1/imports/synth_1/PWM_Generator.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

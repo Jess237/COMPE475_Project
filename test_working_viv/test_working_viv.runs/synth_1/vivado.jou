@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sun Dec  3 13:17:10 2023
-# Process ID: 33004
+# Start of session at: Mon Dec  4 22:48:01 2023
+# Process ID: 3948
 # Current directory: C:/COMPE475_Project/test_working_viv/test_working_viv.runs/synth_1
-# Command line: vivado.exe -log PWM_Generator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PWM_Generator.tcl
-# Log file: C:/COMPE475_Project/test_working_viv/test_working_viv.runs/synth_1/PWM_Generator.vds
+# Command line: vivado.exe -log Burst_Tool.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Burst_Tool.tcl
+# Log file: C:/COMPE475_Project/test_working_viv/test_working_viv.runs/synth_1/Burst_Tool.vds
 # Journal file: C:/COMPE475_Project/test_working_viv/test_working_viv.runs/synth_1\vivado.jou
 # Running On: LAPTOP-APNPFDQU, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
 #-----------------------------------------------------------
-source PWM_Generator.tcl -notrace
+source Burst_Tool.tcl -notrace

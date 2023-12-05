@@ -3,10 +3,10 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sun Dec  3 17:00:40 2023
-# Process ID: 38680
+# Start of session at: Mon Dec  4 22:33:53 2023
+# Process ID: 24424
 # Current directory: C:/COMPE475_Project/test_working_viv
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16360 C:\COMPE475_Project\test_working_viv\test_working_viv.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12756 C:\COMPE475_Project\test_working_viv\test_working_viv.xpr
 # Log file: C:/COMPE475_Project/test_working_viv/vivado.log
 # Journal file: C:/COMPE475_Project/test_working_viv\vivado.jou
 # Running On: LAPTOP-APNPFDQU, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16542 MB
@@ -14,7 +14,6 @@
 start_gui
 Sourcing tcl script 'C:/Users/rojo_/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
 open_project C:/COMPE475_Project/test_working_viv/test_working_viv.xpr
-WARNING: [Board 49-91] Board repository path 'C:/Xilinx/BoardStore/XilinxBoardStore-2023.2' does not exist, it will not be used to search board files.
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -71,16 +70,19 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-91] Board repository path 'C:/Xilinx/BoardStore/XilinxBoardStore-2023.2' does not exist, it will not be used to search board files.
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/COMPE475_Project/test_working_viv/test_working_viv.gen/sources_1'.
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/COMPE475_Project/test_working_viv/test_working_viv.ip_user_files'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sim_1/new/PWM_Generator_tb.v'.
 Scanning sources...
 Finished scanning sources
-WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1522.066 ; gain = 317.859
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1561.402 ; gain = 261.645
 update_compile_order -fileset sources_1
+launch_simulation -simset [get_filesets sim_3 ]
+Command: launch_simulation  -simset sim_3
+INFO: [Vivado 12-12493] Simulation top is 'PWM_Generator_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/COMPE475_Project/test_working_viv/test_working_viv.sim/sim_3/behav/xsim/simulate.log"
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  3 17:02:04 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  4 22:36:54 2023...

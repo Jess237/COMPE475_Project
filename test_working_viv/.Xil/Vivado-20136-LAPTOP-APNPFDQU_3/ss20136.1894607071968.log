@@ -1,0 +1,8 @@
+srcscan starts
+srcscan exits with return value 0
+tor (VERI-9002)
+INFO: analyzing module PWM_Generator (VERI-9002)
+INFO: analyzing module Burst_Tool (VERI-9002)
+C:/Users/rojo_/AppData/Local/Temp/VivadoEditorAssist3514820594849416957.tmp(75): WARNING: syntax error near 'endmodule' (VERI-1137)
+C:/Users/rojo_/AppData/Local/Temp/VivadoEditorAssist3514820594849416957.tmp(75): ERROR: Verilog 2000 keyword 'endmodule' used in incorrect context (VERI-2344)
+srcscan exits with return value 0

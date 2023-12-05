@@ -4,9 +4,9 @@ module pulse_generator_tb();
 	reg clk;
     reg rst;
     reg [3:0] sw;
-    wire [15:0] number_of_samples_logic_high; //1111+1=0
+    wire [15:0] number_of_samples_logic_high_top; //1111+1=0
     wire polling_complete_flag_g;
-    wire [15:0] number_of_samples;
+    wire [15:0] number_of_samples_top;
     wire [14:0] width_sig; //tesT
     wire JA1;
 
@@ -15,9 +15,9 @@ module pulse_generator_tb();
         .clk(clk), 
 		.rst(rst), 
 		.sw(sw),
-        .number_of_samples_logic_high(number_of_samples_logic_high), //1111+1=0
+        .number_of_samples_logic_high(number_of_samples_logic_high_top), //1111+1=0
         .polling_complete_flag_g(polling_complete_flag_g),
-        .number_of_samples(number_of_samples),
+        .number_of_samples(number_of_samples_top),
         .width_sig(width_sig),
         .pwm(JA1)
         );

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/COMPE475_Project/test_working_viv/test_working_viv.runs/synth_1/PWM_Generator.tcl"
+  variable script "C:/COMPE475_Project/test_working_viv/test_working_viv.runs/synth_1/Burst_Tool.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param ced.repoPaths C:/Xilinx/BoardStore/XilinxCEDStore-2023.2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -79,15 +80,18 @@ set_param synth.vivado.isSynthRun true
 set_property webtalk.parent_dir C:/COMPE475_Project/test_working_viv/test_working_viv.cache/wt [current_project]
 set_property parent.project_path C:/COMPE475_Project/test_working_viv/test_working_viv.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language Verilog [current_project]
+set_property target_language VHDL [current_project]
+set_property board_part_repo_paths {C:/Users/rojo_/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_output_repo c:/COMPE475_Project/test_working_viv/test_working_viv.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
+  C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/PWM_Generator.v
   C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/clk_divider.v
   C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/pulse_generator.v
-  C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/PWM_Generator.v
+  C:/COMPE475_Project/test_working_viv/test_working_viv.srcs/sources_1/new/Burst_Tool.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -107,7 +111,7 @@ read_checkpoint -auto_incremental -incremental C:/COMPE475_Project/test_working_
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top PWM_Generator -part xc7a35tcpg236-1
+synth_design -top Burst_Tool -part xc7a35tcpg236-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -117,10 +121,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef PWM_Generator.dcp
+write_checkpoint -force -noxdef Burst_Tool.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file PWM_Generator_utilization_synth.rpt -pb PWM_Generator_utilization_synth.pb"
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file Burst_Tool_utilization_synth.rpt -pb Burst_Tool_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.426886",
+   "Default View_TopLeft":"-363,-312",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 threadsafe
+#  -string -flagsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 1 -x 230 -y -30 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 2 -x 670 -y -40 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -x 230 -y 130 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 230 -y 250 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -x 670 -y 150 -defaultsOSRD
+preplace netloc microblaze_0_Clk 1 0 2 -20 320 490
+preplace netloc clk_wiz_1_locked 1 1 1 500 190n
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 0 3 -10 60 470J 50 840
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 1 2 500 40 850J
+preplace netloc mdm_1_debug_sys_rst 1 1 1 480 140n
+preplace netloc microblaze_0_dlmb_1 1 1 1 470 -70n
+preplace netloc microblaze_0_ilmb_1 1 1 1 480 -50n
+preplace netloc microblaze_0_debug 1 0 2 -30 330 470J
+levelinfo -pg 1 -50 230 670 870
+pagesize -pg 1 -db -bbox -sgen -50 -130 870 340
+"
+}
+{
+   "da_mb_cnt":"1"
+}

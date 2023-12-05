@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1701638227" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/PWM_Generator.dcp">
-  <File Type="PA-TCL" Name="PWM_Generator.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="PWM_Generator_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="PWM_Generator_reports.tcl"/>
-  <File Type="RDS-RDS" Name="PWM_Generator.vds"/>
-  <File Type="RDS-UTIL" Name="PWM_Generator_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="PWM_Generator_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="PWM_Generator.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="PWM_Generator_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="PWM_Generator_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1701760241" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/PWM_Generator.dcp">
+  <File Type="PA-TCL" Name="Burst_Tool.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Burst_Tool_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Burst_Tool_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Burst_Tool.vds"/>
+  <File Type="RDS-UTIL" Name="Burst_Tool_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Burst_Tool_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Burst_Tool.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Burst_Tool_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Burst_Tool_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/PWM_Generator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/clk_divider.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -25,7 +32,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/PWM_Generator.v">
+    <File Path="$PSRCDIR/sources_1/new/Burst_Tool.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -34,7 +41,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="PWM_Generator"/>
+      <Option Name="TopModule" Val="Burst_Tool"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -47,6 +54,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/basys3modconstraint.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

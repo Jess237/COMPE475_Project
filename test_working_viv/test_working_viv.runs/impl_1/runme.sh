@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
-EAStep vivado -log PWM_Generator.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source PWM_Generator.tcl -notrace
+/bin/touch .place_design.begin.rst
+EAStep vivado -log Burst_Tool.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Burst_Tool.tcl -notrace
 
 

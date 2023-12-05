@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log PWM_Generator.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PWM_Generator.tcl
+EAStep vivado -log Burst_Tool.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Burst_Tool.tcl

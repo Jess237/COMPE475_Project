@@ -1,0 +1,18 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pwm_generator_tb_behav xil_defaultlib.pwm_generator_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'adj4' on this module [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v:39]
+ERROR: [VRFC 10-3180] cannot find port 'adj3' on this module [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v:38]
+ERROR: [VRFC 10-3180] cannot find port 'adj2' on this module [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v:37]
+ERROR: [VRFC 10-3180] cannot find port 'adj1' on this module [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v:36]
+ERROR: [VRFC 10-3180] cannot find port 'switchpressed' on this module [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v:35]
+ERROR: [VRFC 10-3180] cannot find port 'width_sig' on this module [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v:33]
+ERROR: [VRFC 10-3180] cannot find port 'number_of_samples_out' on this module [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v:32]
+ERROR: [VRFC 10-3180] cannot find port 'polling_complete_flag_g' on this module [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v:31]
+ERROR: [VRFC 10-3180] cannot find port 'switch_reset_temp' on this module [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v:29]
+ERROR: [VRFC 10-3180] cannot find port 'number_of_samples_logic_high_temp' on this module [C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

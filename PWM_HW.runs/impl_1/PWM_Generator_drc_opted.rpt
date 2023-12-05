@@ -1,0 +1,73 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Dec  4 19:32:53 2023
+| Host         : LAPTOP-APNPFDQU running 64-bit major release  (build 9200)
+| Command      : report_drc -file PWM_Generator_drc_opted.rpt -pb PWM_Generator_drc_opted.pb -rpx PWM_Generator_drc_opted.rpx
+| Design       : PWM_Generator
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 4
++-------------+------------------+-------------------------------------------------------------+------------+
+| Rule        | Severity         | Description                                                 | Violations |
++-------------+------------------+-------------------------------------------------------------+------------+
+| PLCK-12     | Error            | Clock Placer Checks                                         | 1          |
+| NSTD-1      | Critical Warning | Unspecified I/O Standard                                    | 1          |
+| UCIO-1      | Critical Warning | Unconstrained Logical Port                                  | 1          |
+| PLHOLDVIO-2 | Warning          | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+------------------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLCK-12#1 Error
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets rst_IBUF] >
+
+	Clock Rule: rule_gclkio_bufg
+	Status: FAILED
+	Rule Description: An IOB driving a BUFG must use a CCIO in the same half side (top/bottom) of chip as the BUFG
+
+	rst_IBUF_inst (IBUF.O) is locked to R2
+	rst_IBUF_BUFG_inst (BUFG.I) cannot be placed
+
+Related violations: <none>
+
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+33 out of 40 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: number_of_samples[15:0], number_of_samples_logic_high[15:0]
+polling_complete_flag.
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+33 out of 40 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: number_of_samples[15:0], number_of_samples_logic_high[15:0]
+polling_complete_flag.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT uut/uut1/temp_pwm_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
+uut/temp_pwm_reg
+Related violations: <none>
+
+

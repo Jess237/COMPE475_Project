@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/COMPE475_Project/PWM_HW/PWM_HW.sim/pwm_gen_test/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+,,,,,,pwm_generator_tb,,,,,,,,
+C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/sources_1/new/PWM_Generator.v,1701728535,verilog,,,,PWM_Generator,,,,,,,,
+C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/sources_1/new/clk_divider.v,1701732030,verilog,,C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/sources_1/new/pulse_generator.v,,clk_divider,,,,,,,,
+C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/sources_1/new/pulse_generator.v,1701746194,verilog,,C:/COMPE475_Project/PWM_HW/PWM_HW.srcs/pwm_gen_test/new/pwm_generator_tb.v,,pulse_generator,,,,,,,,

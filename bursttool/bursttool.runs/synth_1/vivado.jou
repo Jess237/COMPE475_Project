@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec  5 00:13:12 2023
+# Process ID: 12332
+# Current directory: C:/COMPE475_Project/bursttool/bursttool.runs/synth_1
+# Command line: vivado.exe -log Burst_Tool.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Burst_Tool.tcl
+# Log file: C:/COMPE475_Project/bursttool/bursttool.runs/synth_1/Burst_Tool.vds
+# Journal file: C:/COMPE475_Project/bursttool/bursttool.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Burst_Tool.tcl -notrace
